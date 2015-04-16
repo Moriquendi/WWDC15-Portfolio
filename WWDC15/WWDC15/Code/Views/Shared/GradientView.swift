@@ -44,6 +44,8 @@ class GradientView: UIView {
     // MARK: GradientView
     
     func initialize() {
+        self.backgroundColor = UIColor.clearColor()
+        
         self.gradientLayer = CAGradientLayer()
         self.gradientLayer.startPoint = CGPointMake(0.5, 0.5)
         self.gradientLayer.endPoint = CGPointMake(0.5, 1)

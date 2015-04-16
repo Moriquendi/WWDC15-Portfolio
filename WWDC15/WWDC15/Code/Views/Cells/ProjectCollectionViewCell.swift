@@ -10,9 +10,17 @@ import UIKit
 
 class ProjectCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
+        self.backgroundColor = UIColor.redColor()
+        self.layer.shadowColor = UIColor.blackColor().CGColor
+        self.layer.shadowOpacity = 0.5
+        self.clipsToBounds = false
+        self.layer.shadowRadius = 20
     }
 
 }

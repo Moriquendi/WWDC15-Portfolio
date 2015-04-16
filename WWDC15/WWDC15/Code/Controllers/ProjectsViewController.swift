@@ -50,15 +50,12 @@ class ProjectsViewController: UIViewController {
         return cell
     }
     
+    
     // MARK: ProjectsViewController
     
     func configureCell(cell: UICollectionViewCell, atIndexPath indexPath: NSIndexPath) {
         if let carouselCell = cell as? ProjectCollectionViewCell {
-            carouselCell.backgroundColor = UIColor.redColor()
-            carouselCell.layer.shadowColor = UIColor.blackColor().CGColor
-            carouselCell.layer.shadowOpacity = 0.5
-            carouselCell.clipsToBounds = falser
-            carouselCell.layer.shadowRadius = 20
+            carouselCell.imageView.image = UIImage(named: "panda3")
         }
     }
     

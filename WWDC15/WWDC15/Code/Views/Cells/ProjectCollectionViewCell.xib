@@ -7,30 +7,38 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProjectCollectionViewCell" customModule="WWDC15" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="399" height="253"/>
+            <rect key="frame" x="1" y="0.0" width="580" height="337"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="399" height="253"/>
+                <rect key="frame" x="0.0" y="0.0" width="580" height="337"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="muV-bE-Oez">
-                        <rect key="frame" x="0.0" y="0.0" width="399" height="253"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="muV-bE-Oez">
+                        <rect key="frame" x="0.0" y="0.0" width="580" height="337"/>
                     </imageView>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5D-Bp-h7u">
-                        <rect key="frame" x="0.0" y="213" width="399" height="40"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5D-Bp-h7u" customClass="GradientView" customModule="WWDC15" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="247" width="580" height="90"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Karate Panda" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIl-co-IdS">
-                                <rect key="frame" x="8" y="11" width="105" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="8" y="56" width="126" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="GIl-co-IdS" firstAttribute="leading" secondItem="u5D-Bp-h7u" secondAttribute="leading" constant="8" id="L0M-EU-vdG"/>
-                            <constraint firstAttribute="centerY" secondItem="GIl-co-IdS" secondAttribute="centerY" constant="-1.5" id="j9e-39-VI3"/>
-                            <constraint firstAttribute="height" constant="40" id="v2A-Bb-xT5"/>
+                            <constraint firstAttribute="bottom" secondItem="GIl-co-IdS" secondAttribute="bottom" constant="8" id="XsI-Te-GiM"/>
+                            <constraint firstAttribute="height" constant="90" id="v2A-Bb-xT5"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -44,8 +52,12 @@
                 <constraint firstAttribute="bottom" secondItem="u5D-Bp-h7u" secondAttribute="bottom" id="e47-Jf-WhK"/>
                 <constraint firstItem="muV-bE-Oez" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eGi-WH-Z1Z"/>
             </constraints>
-            <size key="customSize" width="399" height="253"/>
-            <point key="canvasLocation" x="248.5" y="429.5"/>
+            <size key="customSize" width="580" height="337"/>
+            <connections>
+                <outlet property="imageView" destination="muV-bE-Oez" id="P0I-Aa-oOd"/>
+                <outlet property="titleLabel" destination="GIl-co-IdS" id="ycH-QK-59D"/>
+            </connections>
+            <point key="canvasLocation" x="158" y="471.5"/>
         </collectionViewCell>
     </objects>
 </document>
