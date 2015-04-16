@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		903F5C921AE04172008E1FAB /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903F5C911AE04172008E1FAB /* GradientView.swift */; };
 		9070533E1ADF00C700DC8E27 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070533D1ADF00C700DC8E27 /* ProjectsViewController.swift */; };
 		907053441ADF023500DC8E27 /* PBDCarouselCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 907053431ADF023500DC8E27 /* PBDCarouselCollectionViewLayout.m */; };
 		9070534B1ADF041000DC8E27 /* ProjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907053491ADF041000DC8E27 /* ProjectCollectionViewCell.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		903F5C911AE04172008E1FAB /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = Code/Views/Shared/GradientView.swift; sourceTree = "<group>"; };
 		9070533D1ADF00C700DC8E27 /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectsViewController.swift; path = Code/Controllers/ProjectsViewController.swift; sourceTree = "<group>"; };
 		907053411ADF023500DC8E27 /* WWDC15-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WWDC15-Bridging-Header.h"; sourceTree = "<group>"; };
 		907053421ADF023500DC8E27 /* PBDCarouselCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBDCarouselCollectionViewLayout.h; path = Code/Utils/PBDCarouselCollectionViewLayout.h; sourceTree = "<group>"; };
@@ -66,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		903F5C931AE04177008E1FAB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				903F5C911AE04172008E1FAB /* GradientView.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
 		9070533F1ADF00CA00DC8E27 /* Code */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				9070534D1ADF041300DC8E27 /* Cells */,
+				903F5C931AE04177008E1FAB /* Shared */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -217,6 +228,7 @@
 				TargetAttributes = {
 					909AD2DD1ADD7FA2003344F7 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = A7B6W92B4H;
 					};
 					909AD2F21ADD7FA2003344F7 = {
 						CreatedOnToolsVersion = 6.3;
@@ -271,6 +283,7 @@
 			files = (
 				9070534B1ADF041000DC8E27 /* ProjectCollectionViewCell.swift in Sources */,
 				9070533E1ADF00C700DC8E27 /* ProjectsViewController.swift in Sources */,
+				903F5C921AE04172008E1FAB /* GradientView.swift in Sources */,
 				909AD2E61ADD7FA2003344F7 /* ViewController.swift in Sources */,
 				909AD2E41ADD7FA2003344F7 /* AppDelegate.swift in Sources */,
 				907053441ADF023500DC8E27 /* PBDCarouselCollectionViewLayout.m in Sources */,
@@ -403,6 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WWDC15/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WWDC15/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
