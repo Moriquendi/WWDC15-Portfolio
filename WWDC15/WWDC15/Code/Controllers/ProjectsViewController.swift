@@ -10,7 +10,8 @@ import UIKit
 
 class ProjectsViewController: UIViewController,
 UICollectionViewDataSource,
-UICollectionViewDelegate {
+UICollectionViewDelegate,
+UIViewControllerTransitioningDelegate {
 
     let kProjectDetailsSegue = "kProjectDetailsSegue"
     let kProjectCellIdentifier = "kProjectCellIdentifier"
@@ -38,10 +39,13 @@ UICollectionViewDelegate {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let identifier = segue.identifier {
+        if let identifier = segue.identifier,
+            let vc = segue.destinationViewController as? UIViewController
+        {
             switch (identifier) {
                 case kProjectDetailsSegue:
-                    println("Hey ya!")
+                    vc.transitioningDelegate = self
+                vc.modalPresentationStyle = UIModalPresentationStyle.Custom
                 default:
                     println("Do nothing")
             }
@@ -76,6 +80,23 @@ UICollectionViewDelegate {
         if let carouselCell = cell as? ProjectCollectionViewCell {
             carouselCell.imageView.image = UIImage(named: "panda3")
         }
+    }
+ 
+    // MARK: UIViewControllerTransitioningDelegate
+
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        let indexPath = self.collectionView.indexPathsForSelectedItems().last as! NSIndexPath
+        let cell = self.collectionView.cellForItemAtIndexPath(indexPath)
+        let transition = SpreadingTransition(referenceView: cell!, dismissing: true)
+        return transition
+    }
+    
+    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        let indexPath = self.collectionView.indexPathsForSelectedItems().last as! NSIndexPath
+        let cell = self.collectionView.cellForItemAtIndexPath(indexPath)
+        let transition = SpreadingTransition(referenceView: cell!, dismissing: false)
+        return transition
     }
     
 }

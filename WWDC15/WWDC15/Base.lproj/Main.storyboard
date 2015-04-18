@@ -100,7 +100,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="Jyy-16-Qu8" id="Jmp-wc-WKf"/>
-                        <segue destination="tam-w0-L4r" kind="show" identifier="kProjectDetailsSegue" id="IWO-77-08A"/>
+                        <segue destination="tam-w0-L4r" kind="presentation" identifier="kProjectDetailsSegue" id="IWO-77-08A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WWz-Sy-Hun" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -115,18 +115,18 @@
                         <viewControllerLayoutGuide type="top" id="OU1-y3-07m"/>
                         <viewControllerLayoutGuide type="bottom" id="FRf-No-lcN"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="056-iw-EgM">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="056-iw-EgM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="panda3" translatesAutoresizingMaskIntoConstraints="NO" id="Jj2-88-72c">
-                                <rect key="frame" x="0.0" y="20" width="600" height="245"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="245"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="245" id="xkW-rS-wzd"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ezz-0e-6st" customClass="GradientView" customModule="WWDC15" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="143" width="600" height="122"/>
+                                <rect key="frame" x="0.0" y="123" width="600" height="122"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Karate Panda" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOL-Xw-7Rl">
                                         <rect key="frame" x="8" y="88" width="126" height="26"/>
@@ -150,14 +150,24 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oL2-wu-sp9">
-                                <rect key="frame" x="16" y="371" width="568" height="163"/>
+                                <rect key="frame" x="16" y="351" width="568" height="163"/>
                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X28-JF-SSN">
+                                <rect key="frame" x="544" y="20" width="40" height="30"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapClose:" destination="tam-w0-L4r" eventType="touchUpInside" id="BQ1-WJ-O2b"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5a0-Df-d7D">
-                                <rect key="frame" x="0.0" y="265" width="600" height="106"/>
+                                <rect key="frame" x="0.0" y="245" width="600" height="106"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="106" id="ywv-tq-1nf"/>
@@ -167,15 +177,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ezz-0e-6st" firstAttribute="leading" secondItem="Jj2-88-72c" secondAttribute="leading" id="3kj-7N-IOe"/>
-                            <constraint firstItem="Jj2-88-72c" firstAttribute="top" secondItem="OU1-y3-07m" secondAttribute="bottom" id="A6d-sg-08J"/>
+                            <constraint firstItem="Jj2-88-72c" firstAttribute="top" secondItem="OU1-y3-07m" secondAttribute="top" constant="-20" id="A6d-sg-08J"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oL2-wu-sp9" secondAttribute="trailing" id="KTa-8W-giQ"/>
                             <constraint firstAttribute="trailing" secondItem="5a0-Df-d7D" secondAttribute="trailing" id="KZl-KL-mos"/>
                             <constraint firstItem="Ezz-0e-6st" firstAttribute="height" secondItem="Jj2-88-72c" secondAttribute="height" multiplier="0.5" id="Nfd-rU-Zvk"/>
                             <constraint firstItem="Ezz-0e-6st" firstAttribute="bottom" secondItem="Jj2-88-72c" secondAttribute="bottom" id="byb-zG-F8T"/>
                             <constraint firstItem="Ezz-0e-6st" firstAttribute="trailing" secondItem="Jj2-88-72c" secondAttribute="trailing" id="d5s-6r-OJz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="X28-JF-SSN" secondAttribute="trailing" id="df2-Xo-zqF"/>
                             <constraint firstItem="5a0-Df-d7D" firstAttribute="top" secondItem="Jj2-88-72c" secondAttribute="bottom" id="fvM-bp-g0g"/>
                             <constraint firstItem="oL2-wu-sp9" firstAttribute="top" secondItem="5a0-Df-d7D" secondAttribute="bottom" id="fwm-x4-Riw"/>
                             <constraint firstItem="Jj2-88-72c" firstAttribute="leading" secondItem="056-iw-EgM" secondAttribute="leading" id="kOA-eg-WtQ"/>
+                            <constraint firstItem="X28-JF-SSN" firstAttribute="top" secondItem="OU1-y3-07m" secondAttribute="bottom" id="mbO-j0-tFv"/>
                             <constraint firstAttribute="trailing" secondItem="Jj2-88-72c" secondAttribute="trailing" id="qM8-b4-234"/>
                             <constraint firstItem="5a0-Df-d7D" firstAttribute="leading" secondItem="056-iw-EgM" secondAttribute="leading" id="rMz-Ep-fdh"/>
                             <constraint firstItem="oL2-wu-sp9" firstAttribute="leading" secondItem="056-iw-EgM" secondAttribute="leadingMargin" id="wb7-dE-Lzp"/>

@@ -13,6 +13,7 @@
 		907053441ADF023500DC8E27 /* PBDCarouselCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 907053431ADF023500DC8E27 /* PBDCarouselCollectionViewLayout.m */; };
 		9070534B1ADF041000DC8E27 /* ProjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907053491ADF041000DC8E27 /* ProjectCollectionViewCell.swift */; };
 		9070534C1ADF041000DC8E27 /* ProjectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9070534A1ADF041000DC8E27 /* ProjectCollectionViewCell.xib */; };
+		908037F41AE26A4C000CE771 /* SpreadingTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908037F31AE26A4C000CE771 /* SpreadingTransition.swift */; };
 		909AD2E41ADD7FA2003344F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909AD2E31ADD7FA2003344F7 /* AppDelegate.swift */; };
 		909AD2E61ADD7FA2003344F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909AD2E51ADD7FA2003344F7 /* ViewController.swift */; };
 		909AD2E91ADD7FA2003344F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 909AD2E71ADD7FA2003344F7 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		907053431ADF023500DC8E27 /* PBDCarouselCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBDCarouselCollectionViewLayout.m; path = Code/Utils/PBDCarouselCollectionViewLayout.m; sourceTree = "<group>"; };
 		907053491ADF041000DC8E27 /* ProjectCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectCollectionViewCell.swift; path = Code/Views/Cells/ProjectCollectionViewCell.swift; sourceTree = "<group>"; };
 		9070534A1ADF041000DC8E27 /* ProjectCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProjectCollectionViewCell.xib; path = Code/Views/Cells/ProjectCollectionViewCell.xib; sourceTree = "<group>"; };
+		908037F31AE26A4C000CE771 /* SpreadingTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpreadingTransition.swift; path = Code/Utils/Transitions/SpreadingTransition.swift; sourceTree = "<group>"; };
 		909AD2DE1ADD7FA2003344F7 /* WWDC15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		909AD2E21ADD7FA2003344F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		909AD2E31ADD7FA2003344F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			children = (
 				907053421ADF023500DC8E27 /* PBDCarouselCollectionViewLayout.h */,
 				907053431ADF023500DC8E27 /* PBDCarouselCollectionViewLayout.m */,
+				908037F51AE26A4E000CE771 /* Transitions */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -123,6 +126,14 @@
 				9070534A1ADF041000DC8E27 /* ProjectCollectionViewCell.xib */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		908037F51AE26A4E000CE771 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				908037F31AE26A4C000CE771 /* SpreadingTransition.swift */,
+			);
+			name = Transitions;
 			sourceTree = "<group>";
 		};
 		909AD2D51ADD7FA2003344F7 = {
@@ -288,6 +299,7 @@
 				9070533E1ADF00C700DC8E27 /* ProjectsViewController.swift in Sources */,
 				903F5C921AE04172008E1FAB /* GradientView.swift in Sources */,
 				909AD2E61ADD7FA2003344F7 /* ViewController.swift in Sources */,
+				908037F41AE26A4C000CE771 /* SpreadingTransition.swift in Sources */,
 				903F5C961AE04ACA008E1FAB /* ProjectDetailsViewController.swift in Sources */,
 				909AD2E41ADD7FA2003344F7 /* AppDelegate.swift in Sources */,
 				907053441ADF023500DC8E27 /* PBDCarouselCollectionViewLayout.m in Sources */,
