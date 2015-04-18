@@ -8,8 +8,11 @@
 
 import UIKit
 
-class ProjectsViewController: UIViewController {
+class ProjectsViewController: UIViewController,
+UICollectionViewDataSource,
+UICollectionViewDelegate {
 
+    let kProjectDetailsSegue = "kProjectDetailsSegue"
     let kProjectCellIdentifier = "kProjectCellIdentifier"
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -34,6 +37,17 @@ class ProjectsViewController: UIViewController {
         }
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let identifier = segue.identifier {
+            switch (identifier) {
+                case kProjectDetailsSegue:
+                    println("Hey ya!")
+                default:
+                    println("Do nothing")
+            }
+        }
+    }
+    
     // MARK: UICollectionViewDataSource
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -50,6 +64,11 @@ class ProjectsViewController: UIViewController {
         return cell
     }
     
+    // MARK:  UICollectionViewDelegate
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier(kProjectDetailsSegue, sender: self)
+    }
     
     // MARK: ProjectsViewController
     
