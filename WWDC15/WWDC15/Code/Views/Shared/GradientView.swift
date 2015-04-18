@@ -50,7 +50,7 @@ class GradientView: UIView {
         self.gradientLayer.startPoint = CGPointMake(0.5, 0.5)
         self.gradientLayer.endPoint = CGPointMake(0.5, 1)
         self.gradientLayer.opaque = false
-        self.layer.addSublayer(self.gradientLayer)
+        self.layer.insertSublayer(self.gradientLayer, atIndex: 0)
         self.layer.backgroundColor = UIColor.clearColor().CGColor
         self.updateLayerColors()
     }
