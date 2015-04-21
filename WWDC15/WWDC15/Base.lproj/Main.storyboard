@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="R6d-S7-gbd">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -22,13 +22,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhm-So-EtG">
                                 <rect key="frame" x="139" y="219" width="323" height="81"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="70"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'M MICHAŁ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xkz-Oo-x3S">
                                 <rect key="frame" x="138" y="308" width="326" height="81"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="70"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQ7-Xc-78Y">
@@ -72,6 +72,97 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="884" y="104"/>
+        </scene>
+        <!--Circles Editor View Controller-->
+        <scene sceneID="C3F-KI-LVM">
+            <objects>
+                <viewController id="R6d-S7-gbd" customClass="CirclesEditorViewController" customModule="WWDC15" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VAb-eJ-0o6"/>
+                        <viewControllerLayoutGuide type="bottom" id="ehm-HM-W2F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fMq-zS-tph">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fN-be-cXN">
+                                <rect key="frame" x="16" y="20" width="61" height="30"/>
+                                <state key="normal" title="Add new">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapAddNew:" destination="R6d-S7-gbd" eventType="touchUpInside" id="CUk-wU-GP7"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="10" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="n64-wJ-W7y">
+                                <rect key="frame" x="106" y="20" width="302" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="298" id="w2t-hZ-RfQ"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="didChangeSize:" destination="R6d-S7-gbd" eventType="valueChanged" id="NPe-Og-Mpx"/>
+                                </connections>
+                            </slider>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QbL-CZ-9bd">
+                                <rect key="frame" x="428" y="20" width="156" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="ibN-El-Wbv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="didChangeSelectedCircleIndex:" destination="R6d-S7-gbd" eventType="editingChanged" id="cBU-ht-f5m"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="applelog" translatesAutoresizingMaskIntoConstraints="NO" id="Q7g-PN-rKj">
+                                <rect key="frame" x="27" y="62" width="539" height="523"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zH-Dw-KNt">
+                                <rect key="frame" x="16" y="555" width="34" height="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSave:" destination="R6d-S7-gbd" eventType="touchUpInside" id="a2I-wI-H4Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="QbL-CZ-9bd" firstAttribute="leading" secondItem="n64-wJ-W7y" secondAttribute="trailing" constant="22" id="7kI-vW-d7K"/>
+                            <constraint firstItem="n64-wJ-W7y" firstAttribute="leading" secondItem="6fN-be-cXN" secondAttribute="trailing" constant="31" id="Gma-SC-YOB"/>
+                            <constraint firstItem="6fN-be-cXN" firstAttribute="centerY" secondItem="n64-wJ-W7y" secondAttribute="centerY" id="H8w-F7-mj2"/>
+                            <constraint firstItem="6fN-be-cXN" firstAttribute="leading" secondItem="fMq-zS-tph" secondAttribute="leadingMargin" id="IyG-OE-dgv"/>
+                            <constraint firstItem="1zH-Dw-KNt" firstAttribute="leading" secondItem="fMq-zS-tph" secondAttribute="leadingMargin" id="M2D-IT-OVc"/>
+                            <constraint firstAttribute="centerX" secondItem="Q7g-PN-rKj" secondAttribute="centerX" constant="3.5" id="VK6-dv-Y0G"/>
+                            <constraint firstItem="ehm-HM-W2F" firstAttribute="top" secondItem="1zH-Dw-KNt" secondAttribute="bottom" constant="15" id="pAx-Rx-jAz"/>
+                            <constraint firstItem="QbL-CZ-9bd" firstAttribute="centerY" secondItem="n64-wJ-W7y" secondAttribute="centerY" id="rRi-yD-wBk"/>
+                            <constraint firstItem="6fN-be-cXN" firstAttribute="top" secondItem="VAb-eJ-0o6" secondAttribute="bottom" id="taQ-nx-DBx"/>
+                            <constraint firstAttribute="centerY" secondItem="Q7g-PN-rKj" secondAttribute="centerY" constant="-23.5" id="w1g-RC-H4K"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="4xO-Qa-8Ot" appends="YES" id="7Yf-3T-ZMb"/>
+                            <outletCollection property="gestureRecognizers" destination="y7b-1M-B4W" appends="YES" id="ppE-VO-QOX"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="slider" destination="n64-wJ-W7y" id="ea1-MD-raw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="18u-Ep-wN6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer cancelsTouchesInView="NO" minimumNumberOfTouches="1" maximumNumberOfTouches="1" id="4xO-Qa-8Ot">
+                    <connections>
+                        <action selector="panGestureRecognized:" destination="R6d-S7-gbd" id="elK-Hf-T8A"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="y7b-1M-B4W">
+                    <connections>
+                        <action selector="tapRecognized:" destination="R6d-S7-gbd" id="dq4-Sz-q4j"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="863" y="780"/>
         </scene>
         <!--Projects View Controller-->
         <scene sceneID="0Jt-m3-OWT">
@@ -185,7 +276,7 @@
                                 <rect key="frame" x="16" y="351" width="568" height="163"/>
                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X28-JF-SSN">
@@ -232,6 +323,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="applelog" width="539" height="523"/>
         <image name="panda3" width="567" height="432"/>
     </resources>
 </document>
