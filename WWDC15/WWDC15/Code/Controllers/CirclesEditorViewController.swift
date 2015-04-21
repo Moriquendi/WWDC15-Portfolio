@@ -8,52 +8,6 @@
 
 import UIKit
 
-class CircleView: UIView {
-    
-    var label: UILabel!
-    var selected: Bool = false {
-        didSet {
-            self.layer.borderWidth = selected ? 1 : 0
-        }
-    }
-    
-    func initialize() {
-        self.clipsToBounds = true
-        self.layer.borderColor = UIColor.redColor().CGColor
-        
-        let hue: CGFloat = CGFloat(random() % 255) / 255
-        self.backgroundColor = UIColor(hue: hue,
-            saturation: hue,
-            brightness: hue,
-            alpha: 0.4)
-    
-        self.label = UILabel()
-        self.label.backgroundColor = UIColor.clearColor()
-        self.label.textColor = UIColor.whiteColor().colorWithAlphaComponent(0.4)
-        self.addSubview(label)
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.initialize()
-    }
-    
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.initialize()
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        self.layer.cornerRadius = self.bounds.size.width / 2
-        
-        self.label.sizeToFit()
-        self.label.center = CGPointMake(CGRectGetMidX(self.bounds),
-                                        CGRectGetMidY(self.bounds))
-    }
-}
-
-
 class CirclesEditorViewController: UIViewController {
 
     var selectedIndex = -1 {
@@ -96,17 +50,49 @@ class CirclesEditorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.loadCircles()
     }
     
-    @IBAction func didTapAddNew(sender: AnyObject) {
+    func loadCircles() {
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true);
+        let documentsDirectory: NSString = paths[0] as! NSString
+        let plistPath = documentsDirectory.stringByAppendingPathComponent("points.plist")
+        let data = NSArray(contentsOfFile: plistPath)
+        
+        data?.enumerateObjectsUsingBlock({ (object: AnyObject!, index: Int, stop: UnsafeMutablePointer<ObjCBool>) -> Void in
+            let dict = object as! Dictionary<String, CGFloat>
+            
+            let center = CGPointMake(dict["x"]!, dict["y"]!)
+            let size = dict["size"]!
+            let circle = self.addNewCircleWithSize(size, text: String(index), center: center)
+            
+            let hue = CGFloat(((40 + index*4) % 360 ))/360
+            circle.backgroundColor = UIColor(hue: hue,
+                saturation: 0.70,
+                brightness: 0.84,
+                alpha: 0.8)
+            circle.label.hidden = true
+        })
+    }
+    
+    func addNewCircleWithSize(size: CGFloat, text: String, center: CGPoint) -> CircleView {
         let newCircle = CircleView()
-        newCircle.frame = CGRectMake(0, 0, 100, 100)
+        newCircle.frame = CGRectMake(0, 0, size, size)
         newCircle.label.text = String(circles.count)
         circles.append(newCircle)
         
         self.view.addSubview(newCircle)
-        newCircle.center = CGPointMake(CGRectGetMidX(self.view.bounds),
-                                        CGRectGetMidY(self.view.bounds))
+        newCircle.center = center
+        
+        return newCircle
+    }
+    
+    @IBAction func didTapAddNew(sender: AnyObject) {
+        self.addNewCircleWithSize(CGFloat(100),
+                                text: String(circles.count),
+                                center: CGPointMake(CGRectGetMidX(self.view.bounds),
+                                                    CGRectGetMidY(self.view.bounds)))
         
         self.selectedIndex = self.circles.count - 1
         self.slider.value = 100

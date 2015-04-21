@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="R6d-S7-gbd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VXa-rJ-tdK">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -71,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884" y="104"/>
+            <point key="canvasLocation" x="500" y="100"/>
         </scene>
         <!--Circles Editor View Controller-->
         <scene sceneID="C3F-KI-LVM">
@@ -114,7 +114,7 @@
                                     <action selector="didChangeSelectedCircleIndex:" destination="R6d-S7-gbd" eventType="editingChanged" id="cBU-ht-f5m"/>
                                 </connections>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="applelog" translatesAutoresizingMaskIntoConstraints="NO" id="Q7g-PN-rKj">
+                            <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applelog" translatesAutoresizingMaskIntoConstraints="NO" id="Q7g-PN-rKj">
                                 <rect key="frame" x="27" y="62" width="539" height="523"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zH-Dw-KNt">
@@ -162,7 +162,37 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="863" y="780"/>
+            <point key="canvasLocation" x="581" y="1092"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4F1-hv-NdQ">
+            <objects>
+                <viewController id="VXa-rJ-tdK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qGb-YG-Twc"/>
+                        <viewControllerLayoutGuide type="bottom" id="4YF-Oz-Zvx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="38p-lp-DgV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tb2-DL-Zko" customClass="DSAnimatedAppleView" customModule="WWDC15" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tb2-DL-Zko" firstAttribute="leading" secondItem="38p-lp-DgV" secondAttribute="leading" id="Mj7-09-Ukz"/>
+                            <constraint firstItem="tb2-DL-Zko" firstAttribute="top" secondItem="38p-lp-DgV" secondAttribute="top" id="TvM-P1-zEd"/>
+                            <constraint firstAttribute="trailing" secondItem="tb2-DL-Zko" secondAttribute="trailing" id="m9D-KH-L6a"/>
+                            <constraint firstItem="4YF-Oz-Zvx" firstAttribute="top" secondItem="tb2-DL-Zko" secondAttribute="bottom" id="x9A-cV-Rej"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r13-Os-G4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-176" y="392"/>
         </scene>
         <!--Projects View Controller-->
         <scene sceneID="0Jt-m3-OWT">
