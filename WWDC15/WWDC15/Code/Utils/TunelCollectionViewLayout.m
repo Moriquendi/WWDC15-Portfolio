@@ -70,11 +70,17 @@
     
     CATransform3D rotationAndPerspectiveTransform = CATransform3DIdentity;
     rotationAndPerspectiveTransform.m34 = 1.0 / -500;
-    CGFloat translate = 140 * normalizedDistance;
+    CGFloat translate = 240 * normalizedDistance;
+    
+    if (translate < 0) {
+        attributes.center = CGPointMake(attributes.center.x,
+                                        attributes.center.y - distanceFromCenter*0.9);
+        attributes.alpha = MAX(0, 1 + normalizedDistance);
+    }
     
     attributes.transform3D = CATransform3DTranslate(rotationAndPerspectiveTransform,
                                                     0,
-                                                    MAX(0, -translate * 7),
+                                                    0,
                                                     MIN(0, translate));
     
     return attributes;
