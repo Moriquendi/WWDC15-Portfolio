@@ -13,32 +13,43 @@ UICollectionViewDataSource,
 UICollectionViewDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    var views: Array<UIView> = []
     let kCellIdentifier = "kCellIdentifier"
     // MARK: UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.loadPages()
+        
+        
         self.collectionView.registerClass(UICollectionViewCell.classForCoder(),
             forCellWithReuseIdentifier: kCellIdentifier)
         self.collectionView.pagingEnabled = true
     }
+    
+    func loadPages()
+    {
+        self.views = NSBundle.mainBundle().loadNibNamed("IntoTheWildView", owner: self, options:nil) as! [UIView]
+    }
  
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3;
+        return self.views.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(kCellIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
         
-        let colors = [UIColor.redColor(), UIColor.greenColor(), UIColor.blueColor()]
-        
-        cell.backgroundColor = colors[indexPath.item]
+//        let colors = [UIColor.redColor(), UIColor.greenColor(), UIColor.blueColor()]
+//        cell.backgroundColor = colors[indexPath.item]
         cell.layer.shadowColor = UIColor.blackColor().CGColor
         cell.layer.shadowOpacity = 0.5
         cell.clipsToBounds = false
         cell.layer.shadowRadius = 20
+
+        let pageView = self.views[indexPath.item]
+        cell.contentView.addSubview(pageView)
+        pageView.frame = cell.contentView.bounds
         
         return cell
     }

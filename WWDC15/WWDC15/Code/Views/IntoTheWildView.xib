@@ -150,7 +150,7 @@ Despite cold, this is the place where we decide to place the camp and adore asto
     <resources>
         <image name="coldMountain" width="960" height="715"/>
         <image name="fire" width="2048" height="1536"/>
-        <image name="group" width="4420" height="2336"/>
+        <image name="group" width="1856" height="981"/>
         <image name="walk" width="2048" height="1536"/>
     </resources>
 </document>
