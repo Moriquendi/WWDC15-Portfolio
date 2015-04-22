@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walk" translatesAutoresizingMaskIntoConstraints="NO" id="9OS-hc-lXH">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2U-NR-yLo">
+                    <rect key="frame" x="50" y="30" width="614" height="95"/>
+                    <attributedString key="attributedText">
+                        <fragment content="INTO THE WILD">
+                            <attributes>
+                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="40" name="HelveticaNeue-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+HIKING, CAYAKING &amp; HITCH-HIKING</string>
+                            <attributes>
+                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="40" name="HelveticaNeue-Thin"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="B2U-NR-yLo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="0fG-eQ-NrY"/>
+                <constraint firstAttribute="trailing" secondItem="9OS-hc-lXH" secondAttribute="trailing" id="3gI-8E-1j4"/>
+                <constraint firstItem="B2U-NR-yLo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="E5A-He-cyk"/>
+                <constraint firstAttribute="bottom" secondItem="9OS-hc-lXH" secondAttribute="bottom" id="g2A-r9-KLX"/>
+                <constraint firstItem="9OS-hc-lXH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="knE-RY-Ov9"/>
+                <constraint firstItem="9OS-hc-lXH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nyr-0e-oNx"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+        </view>
+        <view contentMode="scaleToFill" id="Y4c-pc-k4t">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coldMountain" translatesAutoresizingMaskIntoConstraints="NO" id="HJz-Ju-bDB">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4f-Oa-0Dy">
+                    <rect key="frame" x="28" y="367" width="500" height="187"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="500" id="olm-2V-2Hq"/>
+                    </constraints>
+                    <string key="text">Here I am, in the middle of nowhere, 2.000 meters above the sea level.
+
+Despite cold, this is the place where we decide to place the camp and adore astounding views.</string>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="G4f-Oa-0Dy" firstAttribute="leading" secondItem="Y4c-pc-k4t" secondAttribute="leadingMargin" constant="20" id="I0X-En-TKx"/>
+                <constraint firstAttribute="bottom" secondItem="G4f-Oa-0Dy" secondAttribute="bottom" constant="214" id="aZN-Tg-UKs"/>
+                <constraint firstAttribute="trailing" secondItem="HJz-Ju-bDB" secondAttribute="trailing" id="dZJ-z9-dux"/>
+                <constraint firstItem="HJz-Ju-bDB" firstAttribute="top" secondItem="Y4c-pc-k4t" secondAttribute="top" id="ghV-Ye-csd"/>
+                <constraint firstAttribute="bottom" secondItem="HJz-Ju-bDB" secondAttribute="bottom" id="kik-uY-FCl"/>
+                <constraint firstItem="G4f-Oa-0Dy" firstAttribute="leading" secondItem="Y4c-pc-k4t" secondAttribute="leading" constant="30" id="xPr-Xy-7Yu"/>
+                <constraint firstItem="HJz-Ju-bDB" firstAttribute="leading" secondItem="Y4c-pc-k4t" secondAttribute="leading" id="yx4-7W-xmm"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="xPr-Xy-7Yu"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="483" y="1106"/>
+        </view>
+        <view contentMode="scaleToFill" id="7P9-ld-JO3">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="gp6-aq-kSW">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drink tea brewed with a water boiled on a real fire..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftD-Sl-RPD">
+                    <rect key="frame" x="456" y="88" width="371" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="371" id="fs7-8g-SVJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ftD-Sl-RPD" firstAttribute="top" secondItem="7P9-ld-JO3" secondAttribute="top" constant="88" id="2tb-xj-e2J"/>
+                <constraint firstAttribute="trailing" secondItem="ftD-Sl-RPD" secondAttribute="trailing" constant="197" id="hVS-xX-WjQ"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+            <point key="canvasLocation" x="483" y="1939"/>
+        </view>
+        <view contentMode="scaleToFill" id="5Kz-cG-k4e">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group" translatesAutoresizingMaskIntoConstraints="NO" id="mxM-XX-Ydo">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jev-Yb-ra9">
+                    <rect key="frame" x="463" y="66" width="492" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="492" id="xJ5-DV-8pG"/>
+                    </constraints>
+                    <string key="text">Going with a small group of friends to the places that almost noone ever visits. This is my way to clear the mind and forget about technology, work, school, deadlines...</string>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="mxM-XX-Ydo" secondAttribute="bottom" id="49U-qX-Q0D"/>
+                <constraint firstAttribute="trailing" secondItem="mxM-XX-Ydo" secondAttribute="trailing" id="6pb-Jt-60m"/>
+                <constraint firstItem="jev-Yb-ra9" firstAttribute="top" secondItem="5Kz-cG-k4e" secondAttribute="top" constant="66" id="8gd-Vd-SvA"/>
+                <constraint firstAttribute="trailing" secondItem="jev-Yb-ra9" secondAttribute="trailing" constant="69" id="E4A-mf-Xra"/>
+                <constraint firstItem="mxM-XX-Ydo" firstAttribute="top" secondItem="5Kz-cG-k4e" secondAttribute="top" id="Soh-ix-umz"/>
+                <constraint firstItem="mxM-XX-Ydo" firstAttribute="leading" secondItem="5Kz-cG-k4e" secondAttribute="leading" id="w5X-8N-bzd"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+            <point key="canvasLocation" x="483" y="2794"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="coldMountain" width="960" height="715"/>
+        <image name="fire" width="2048" height="1536"/>
+        <image name="group" width="4420" height="2336"/>
+        <image name="walk" width="2048" height="1536"/>
+    </resources>
+</document>

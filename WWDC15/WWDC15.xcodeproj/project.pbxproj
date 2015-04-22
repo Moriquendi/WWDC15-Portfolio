@@ -16,6 +16,8 @@
 		9070534C1ADF041000DC8E27 /* ProjectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9070534A1ADF041000DC8E27 /* ProjectCollectionViewCell.xib */; };
 		908037F41AE26A4C000CE771 /* SpreadingTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908037F31AE26A4C000CE771 /* SpreadingTransition.swift */; };
 		9092A04E1AE3DBBB00EFE45E /* CirclesEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9092A04D1AE3DBBB00EFE45E /* CirclesEditorViewController.swift */; };
+		909757DF1AE6ED0800F858AA /* IntoTheWildView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909757DE1AE6ED0800F858AA /* IntoTheWildView.xib */; };
+		909757E11AE6FFB500F858AA /* IntoTheWildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909757E01AE6FFB500F858AA /* IntoTheWildViewController.swift */; };
 		909AD2E41ADD7FA2003344F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909AD2E31ADD7FA2003344F7 /* AppDelegate.swift */; };
 		909AD2E61ADD7FA2003344F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909AD2E51ADD7FA2003344F7 /* ViewController.swift */; };
 		909AD2E91ADD7FA2003344F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 909AD2E71ADD7FA2003344F7 /* Main.storyboard */; };
@@ -47,6 +49,8 @@
 		9070534A1ADF041000DC8E27 /* ProjectCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProjectCollectionViewCell.xib; path = Code/Views/Cells/ProjectCollectionViewCell.xib; sourceTree = "<group>"; };
 		908037F31AE26A4C000CE771 /* SpreadingTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpreadingTransition.swift; path = Code/Utils/Transitions/SpreadingTransition.swift; sourceTree = "<group>"; };
 		9092A04D1AE3DBBB00EFE45E /* CirclesEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CirclesEditorViewController.swift; path = Code/Controllers/CirclesEditorViewController.swift; sourceTree = "<group>"; };
+		909757DE1AE6ED0800F858AA /* IntoTheWildView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = IntoTheWildView.xib; path = Code/Views/IntoTheWildView.xib; sourceTree = "<group>"; };
+		909757E01AE6FFB500F858AA /* IntoTheWildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntoTheWildViewController.swift; path = Code/Controllers/IntoTheWildViewController.swift; sourceTree = "<group>"; };
 		909AD2DE1ADD7FA2003344F7 /* WWDC15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		909AD2E21ADD7FA2003344F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		909AD2E31ADD7FA2003344F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 				9070533D1ADF00C700DC8E27 /* ProjectsViewController.swift */,
 				903F5C941AE04ACA008E1FAB /* ProjectDetailsViewController.swift */,
 				9092A04D1AE3DBBB00EFE45E /* CirclesEditorViewController.swift */,
+				909757E01AE6FFB500F858AA /* IntoTheWildViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 				9070534D1ADF041300DC8E27 /* Cells */,
 				903F5C931AE04177008E1FAB /* Shared */,
 				903DA6511AE6D7B70010508D /* DSAnimatedAppleView.swift */,
+				909757DE1AE6ED0800F858AA /* IntoTheWildView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -295,6 +301,7 @@
 				9070534C1ADF041000DC8E27 /* ProjectCollectionViewCell.xib in Resources */,
 				909AD2E91ADD7FA2003344F7 /* Main.storyboard in Resources */,
 				909AD2EE1ADD7FA2003344F7 /* LaunchScreen.xib in Resources */,
+				909757DF1AE6ED0800F858AA /* IntoTheWildView.xib in Resources */,
 				909AD2EB1ADD7FA2003344F7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +327,7 @@
 				9092A04E1AE3DBBB00EFE45E /* CirclesEditorViewController.swift in Sources */,
 				908037F41AE26A4C000CE771 /* SpreadingTransition.swift in Sources */,
 				903F5C961AE04ACA008E1FAB /* ProjectDetailsViewController.swift in Sources */,
+				909757E11AE6FFB500F858AA /* IntoTheWildViewController.swift in Sources */,
 				909AD2E41ADD7FA2003344F7 /* AppDelegate.swift in Sources */,
 				907053441ADF023500DC8E27 /* PBDCarouselCollectionViewLayout.m in Sources */,
 				903DA6521AE6D7B70010508D /* DSAnimatedAppleView.swift in Sources */,

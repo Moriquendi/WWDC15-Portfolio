@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VXa-rJ-tdK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -162,7 +162,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="581" y="1092"/>
+            <point key="canvasLocation" x="587" y="1488"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4F1-hv-NdQ">
@@ -192,7 +192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r13-Os-G4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-176" y="392"/>
+            <point key="canvasLocation" x="648" y="808"/>
         </scene>
         <!--Projects View Controller-->
         <scene sceneID="0Jt-m3-OWT">
@@ -259,6 +259,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WWz-Sy-Hun" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1881" y="411"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1Ny-ut-Z9E">
+            <objects>
+                <viewController id="Pax-UB-OOx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qJa-kk-eqJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="aTH-13-Fyy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oWU-aZ-8xh">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZQ7-R5-aFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1946" y="1420"/>
         </scene>
         <!--Project Details View Controller-->
         <scene sceneID="hRR-WU-nUk">
