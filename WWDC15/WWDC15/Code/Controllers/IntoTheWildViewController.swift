@@ -8,13 +8,39 @@
 
 import UIKit
 
-class IntoTheWildViewController: UIViewController {
+class IntoTheWildViewController: UIViewController,
+UICollectionViewDataSource,
+UICollectionViewDelegate {
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    let kCellIdentifier = "kCellIdentifier"
     // MARK: UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.collectionView.registerClass(UICollectionViewCell.classForCoder(),
+            forCellWithReuseIdentifier: kCellIdentifier)
+        self.collectionView.pagingEnabled = true
+    }
+ 
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3;
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(kCellIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
+        
+        let colors = [UIColor.redColor(), UIColor.greenColor(), UIColor.blueColor()]
+        
+        cell.backgroundColor = colors[indexPath.item]
+        cell.layer.shadowColor = UIColor.blackColor().CGColor
+        cell.layer.shadowOpacity = 0.5
+        cell.clipsToBounds = false
+        cell.layer.shadowRadius = 20
+        
+        return cell
     }
     
 }

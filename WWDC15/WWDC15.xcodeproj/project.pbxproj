@@ -10,6 +10,7 @@
 		903DA6521AE6D7B70010508D /* DSAnimatedAppleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903DA6511AE6D7B70010508D /* DSAnimatedAppleView.swift */; };
 		903F5C921AE04172008E1FAB /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903F5C911AE04172008E1FAB /* GradientView.swift */; };
 		903F5C961AE04ACA008E1FAB /* ProjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903F5C941AE04ACA008E1FAB /* ProjectDetailsViewController.swift */; };
+		90476B651AE7AA61002CAF31 /* TunelCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 90476B641AE7AA61002CAF31 /* TunelCollectionViewLayout.m */; };
 		9070533E1ADF00C700DC8E27 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070533D1ADF00C700DC8E27 /* ProjectsViewController.swift */; };
 		907053441ADF023500DC8E27 /* PBDCarouselCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 907053431ADF023500DC8E27 /* PBDCarouselCollectionViewLayout.m */; };
 		9070534B1ADF041000DC8E27 /* ProjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907053491ADF041000DC8E27 /* ProjectCollectionViewCell.swift */; };
@@ -41,6 +42,8 @@
 		903DA6511AE6D7B70010508D /* DSAnimatedAppleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DSAnimatedAppleView.swift; path = Code/Views/DSAnimatedAppleView.swift; sourceTree = "<group>"; };
 		903F5C911AE04172008E1FAB /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = Code/Views/Shared/GradientView.swift; sourceTree = "<group>"; };
 		903F5C941AE04ACA008E1FAB /* ProjectDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectDetailsViewController.swift; path = Code/Controllers/ProjectDetailsViewController.swift; sourceTree = "<group>"; };
+		90476B631AE7AA61002CAF31 /* TunelCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TunelCollectionViewLayout.h; path = Code/Utils/TunelCollectionViewLayout.h; sourceTree = "<group>"; };
+		90476B641AE7AA61002CAF31 /* TunelCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TunelCollectionViewLayout.m; path = Code/Utils/TunelCollectionViewLayout.m; sourceTree = "<group>"; };
 		9070533D1ADF00C700DC8E27 /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectsViewController.swift; path = Code/Controllers/ProjectsViewController.swift; sourceTree = "<group>"; };
 		907053411ADF023500DC8E27 /* WWDC15-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WWDC15-Bridging-Header.h"; sourceTree = "<group>"; };
 		907053421ADF023500DC8E27 /* PBDCarouselCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBDCarouselCollectionViewLayout.h; path = Code/Utils/PBDCarouselCollectionViewLayout.h; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 		907053451ADF023C00DC8E27 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				90476B631AE7AA61002CAF31 /* TunelCollectionViewLayout.h */,
+				90476B641AE7AA61002CAF31 /* TunelCollectionViewLayout.m */,
 				907053421ADF023500DC8E27 /* PBDCarouselCollectionViewLayout.h */,
 				907053431ADF023500DC8E27 /* PBDCarouselCollectionViewLayout.m */,
 				908037F51AE26A4E000CE771 /* Transitions */,
@@ -331,6 +336,7 @@
 				909AD2E41ADD7FA2003344F7 /* AppDelegate.swift in Sources */,
 				907053441ADF023500DC8E27 /* PBDCarouselCollectionViewLayout.m in Sources */,
 				903DA6521AE6D7B70010508D /* DSAnimatedAppleView.swift in Sources */,
+				90476B651AE7AA61002CAF31 /* TunelCollectionViewLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
