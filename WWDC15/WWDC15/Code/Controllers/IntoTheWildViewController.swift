@@ -20,11 +20,6 @@ UICollectionViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadPages()
-        
-        
-        self.collectionView.registerClass(UICollectionViewCell.classForCoder(),
-            forCellWithReuseIdentifier: kCellIdentifier)
-        self.collectionView.pagingEnabled = true
     }
     
     func loadPages()
@@ -40,8 +35,6 @@ UICollectionViewDelegate {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(kCellIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
         
-//        let colors = [UIColor.redColor(), UIColor.greenColor(), UIColor.blueColor()]
-//        cell.backgroundColor = colors[indexPath.item]
         cell.layer.shadowColor = UIColor.blackColor().CGColor
         cell.layer.shadowOpacity = 0.5
         cell.clipsToBounds = false

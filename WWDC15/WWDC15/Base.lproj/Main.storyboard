@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Pax-UB-OOx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ax9-tW-cBO">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -71,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="500" y="100"/>
+            <point key="canvasLocation" x="394" y="46"/>
         </scene>
         <!--Circles Editor View Controller-->
         <scene sceneID="C3F-KI-LVM">
@@ -164,6 +165,82 @@
             </objects>
             <point key="canvasLocation" x="587" y="1488"/>
         </scene>
+        <!--Me View Controller-->
+        <scene sceneID="hM7-j6-guk">
+            <objects>
+                <viewController id="ax9-tW-cBO" customClass="MeViewController" customModule="WWDC15" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vy4-YT-Q7x"/>
+                        <viewControllerLayoutGuide type="bottom" id="qZ3-vP-aki"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4qC-f6-QRf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KRAKÓW" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAF-Qe-aGd">
+                                <rect key="frame" x="350" y="125" width="215" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="0.87362174881304344" green="0.27749532408441391" blue="0.16493484233754824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPC-L1-Bb7" customClass="PolandMapView" customModule="WWDC15" customModuleProvider="target">
+                                <rect key="frame" x="-150" y="125" width="450" height="450"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="JME-8Z-Aix"/>
+                                    <constraint firstAttribute="width" constant="450" id="b1Z-qo-sr4"/>
+                                    <constraint firstAttribute="width" secondItem="hPC-L1-Bb7" secondAttribute="height" multiplier="1:1" id="hom-TR-w8K"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="JME-8Z-Aix"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mc6-uN-ts0">
+                                <rect key="frame" x="350" y="215" width="214" height="304"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Kraków, "The city of Kings", laying at the foot of Polish mountains, is an astounding city with a long and great history.
+I am so lucky to live here.
+Nowadays, thanks to many of the best universities and a vibrant students community, it is recognized as a leading region in IT in the country.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="15" lineHeightMultiple="1.1499999999999999"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mc6-uN-ts0" secondAttribute="trailing" constant="20" id="166-VZ-4tU"/>
+                            <constraint firstItem="TAF-Qe-aGd" firstAttribute="leading" secondItem="hPC-L1-Bb7" secondAttribute="trailing" constant="50" id="5yH-Sn-SaQ"/>
+                            <constraint firstAttribute="width" secondItem="hPC-L1-Bb7" secondAttribute="width" multiplier="0.4" id="FmX-E1-fM5"/>
+                            <constraint firstItem="Mc6-uN-ts0" firstAttribute="leading" secondItem="TAF-Qe-aGd" secondAttribute="leading" id="Jqt-sw-2gu"/>
+                            <constraint firstAttribute="centerX" secondItem="hPC-L1-Bb7" secondAttribute="trailing" id="KLz-jl-6by"/>
+                            <constraint firstItem="TAF-Qe-aGd" firstAttribute="top" secondItem="hPC-L1-Bb7" secondAttribute="top" id="V8b-N4-uae"/>
+                            <constraint firstAttribute="centerY" secondItem="hPC-L1-Bb7" secondAttribute="centerY" constant="-50" id="b8q-86-sAQ"/>
+                            <constraint firstAttribute="width" secondItem="hPC-L1-Bb7" secondAttribute="width" multiplier="0.1" id="gbb-9c-VT8"/>
+                            <constraint firstItem="Mc6-uN-ts0" firstAttribute="top" secondItem="TAF-Qe-aGd" secondAttribute="bottom" constant="30" id="mxG-Ot-l6C"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FmX-E1-fM5"/>
+                                <exclude reference="gbb-9c-VT8"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="polandMapView" destination="hPC-L1-Bb7" id="t6k-lD-GFb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDf-rU-bid" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="730"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="4F1-hv-NdQ">
             <objects>
@@ -192,7 +269,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r13-Os-G4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="648" y="808"/>
+            <point key="canvasLocation" x="1212" y="898"/>
         </scene>
         <!--Projects View Controller-->
         <scene sceneID="0Jt-m3-OWT">
@@ -272,11 +349,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="p5m-tL-zZa">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="p5m-tL-zZa">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <collectionViewLayout key="collectionViewLayout" id="3Ya-NW-hCO" customClass="TunelCollectionViewLayout"/>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4Zp-dS-4Mf">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kCellIdentifier" id="4Zp-dS-4Mf">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -300,7 +377,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZQ7-R5-aFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="520" y="-585"/>
+            <point key="canvasLocation" x="1288" y="-479"/>
         </scene>
         <!--Project Details View Controller-->
         <scene sceneID="hRR-WU-nUk">
