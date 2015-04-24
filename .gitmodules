@@ -1,3 +1,3 @@
-[submodule "Vendor/CCARadialGradientLayer"]
-	path = Vendor/CCARadialGradientLayer
-	url = git@github.com:jilouc/CCARadialGradientLayer.git
+[submodule "Vendor/RadialGradient"]
+	path = Vendor/RadialGradient
+	url = git@github.com:Moriquendi/CCARadialGradientLayer.git

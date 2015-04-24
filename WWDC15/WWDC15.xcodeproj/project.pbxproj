@@ -28,7 +28,7 @@
 		909AD2EE1ADD7FA2003344F7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 909AD2EC1ADD7FA2003344F7 /* LaunchScreen.xib */; };
 		909AD2FA1ADD7FA2003344F7 /* WWDC15Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909AD2F91ADD7FA2003344F7 /* WWDC15Tests.swift */; };
 		90C3E8C21AE6B60B006338F7 /* points.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90C3E8C11AE6B60B006338F7 /* points.plist */; };
-		90EA2FEA1AEAFDAB00A67C32 /* CCARadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EA2FE91AEAFDAB00A67C32 /* CCARadialGradientLayer.m */; };
+		90D047D11AEB07270067853C /* CCARadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D047D01AEB07270067853C /* CCARadialGradientLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +70,8 @@
 		909AD2F81ADD7FA2003344F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		909AD2F91ADD7FA2003344F7 /* WWDC15Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWDC15Tests.swift; sourceTree = "<group>"; };
 		90C3E8C11AE6B60B006338F7 /* points.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = points.plist; path = Resources/points.plist; sourceTree = "<group>"; };
-		90EA2FE81AEAFDAB00A67C32 /* CCARadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCARadialGradientLayer.h; path = ../../Vendor/CCARadialGradientLayer/CCARadialGradientLayer/CCARadialGradientLayer.h; sourceTree = "<group>"; };
-		90EA2FE91AEAFDAB00A67C32 /* CCARadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCARadialGradientLayer.m; path = ../../Vendor/CCARadialGradientLayer/CCARadialGradientLayer/CCARadialGradientLayer.m; sourceTree = "<group>"; };
+		90D047CF1AEB07270067853C /* CCARadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCARadialGradientLayer.h; path = ../../Vendor/RadialGradient/CCARadialGradientLayer/CCARadialGradientLayer.h; sourceTree = "<group>"; };
+		90D047D01AEB07270067853C /* CCARadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCARadialGradientLayer.m; path = ../../Vendor/RadialGradient/CCARadialGradientLayer/CCARadialGradientLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,8 +234,8 @@
 		90EA2FEB1AEAFDAE00A67C32 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				90EA2FE81AEAFDAB00A67C32 /* CCARadialGradientLayer.h */,
-				90EA2FE91AEAFDAB00A67C32 /* CCARadialGradientLayer.m */,
+				90D047CF1AEB07270067853C /* CCARadialGradientLayer.h */,
+				90D047D01AEB07270067853C /* CCARadialGradientLayer.m */,
 			);
 			name = Vendor;
 			sourceTree = "<group>";
@@ -353,7 +353,7 @@
 				9092A04E1AE3DBBB00EFE45E /* CirclesEditorViewController.swift in Sources */,
 				908037F41AE26A4C000CE771 /* SpreadingTransition.swift in Sources */,
 				903F5C961AE04ACA008E1FAB /* ProjectDetailsViewController.swift in Sources */,
-				90EA2FEA1AEAFDAB00A67C32 /* CCARadialGradientLayer.m in Sources */,
+				90D047D11AEB07270067853C /* CCARadialGradientLayer.m in Sources */,
 				909757E11AE6FFB500F858AA /* IntoTheWildViewController.swift in Sources */,
 				909AD2E41ADD7FA2003344F7 /* AppDelegate.swift in Sources */,
 				907053441ADF023500DC8E27 /* PBDCarouselCollectionViewLayout.m in Sources */,
