@@ -1,0 +1,3 @@
+[submodule "Vendor/CCARadialGradientLayer"]
+	path = Vendor/CCARadialGradientLayer
+	url = git@github.com:jilouc/CCARadialGradientLayer.git

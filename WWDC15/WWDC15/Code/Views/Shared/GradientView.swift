@@ -8,8 +8,12 @@
 
 import UIKit
 
+
 @IBDesignable
 class GradientView: UIView {
+    
+    let kLinearGradientType = "kLinearGradientType"
+    let kRadialGradientType = "kRadialGradientType"
     
     @IBInspectable var startColor: UIColor? {
         didSet {
@@ -21,8 +25,13 @@ class GradientView: UIView {
             self.updateLayerColors()
         }
     }
+    @IBInspectable var type: NSString? {
+        didSet {
+            self.reloadLayers()
+        }
+    }
 
-    private var gradientLayer: CAGradientLayer!
+    private var gradientLayer: CALayer!
    
     // MARK: UIView
     
@@ -39,19 +48,42 @@ class GradientView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         self.gradientLayer.frame = self.bounds
+        
+        if let radialGradient = self.gradientLayer as? CCARadialGradientLayer {
+            radialGradient.gradientOrigin = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2)
+            radialGradient.gradientRadius = self.bounds.size.width/3
+        }
     }
     
     // MARK: GradientView
     
     func initialize() {
         self.backgroundColor = UIColor.clearColor()
+        self.startColor = UIColor.blackColor()
+        self.endColor = UIColor.whiteColor()
+        self.type = kLinearGradientType
         
-        self.gradientLayer = CAGradientLayer()
-        self.gradientLayer.startPoint = CGPointMake(0.5, 0.5)
-        self.gradientLayer.endPoint = CGPointMake(0.5, 1)
+        self.reloadLayers()
+    }
+    
+    func reloadLayers() {
+        self.layer.sublayers?.first?.removeFromSuperlayer()
+        
+        if (self.type == kLinearGradientType) {
+            let linearGradient = CAGradientLayer()
+            linearGradient.startPoint = CGPointMake(0.5, 0.5)
+            linearGradient.endPoint = CGPointMake(0.5, 1)
+            self.gradientLayer = linearGradient
+        }
+        else if (self.type == kRadialGradientType) {
+            let radialGradient = CCARadialGradientLayer()
+            radialGradient.locations = [0, 1]
+            self.gradientLayer = radialGradient
+        }
         self.gradientLayer.opaque = false
         self.layer.insertSublayer(self.gradientLayer, atIndex: 0)
         self.layer.backgroundColor = UIColor.clearColor().CGColor
+        
         self.updateLayerColors()
     }
     
@@ -60,7 +92,13 @@ class GradientView: UIView {
             let end = self.endColor {
                 let colors = [start.CGColor,
                                 end.CGColor]
-                self.gradientLayer.colors = colors
+                
+                if let linearGradient = self.gradientLayer as? CAGradientLayer {
+                    linearGradient.colors = colors
+                }
+                else if let radialGradient = self.gradientLayer as? CCARadialGradientLayer {
+                    radialGradient.colors = colors
+                }
         }
     }
 }

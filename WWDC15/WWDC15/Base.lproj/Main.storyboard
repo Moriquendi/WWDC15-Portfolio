@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ax9-tW-cBO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -46,7 +46,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Zfh-oM-DAP" kind="show" id="oQQ-YK-Mix"/>
+                                    <segue destination="UUc-x6-k48" kind="show" id="JY9-UG-kxR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -72,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="394" y="46"/>
+            <point key="canvasLocation" x="-622" y="94"/>
         </scene>
         <!--Circles Editor View Controller-->
         <scene sceneID="C3F-KI-LVM">
@@ -239,7 +239,63 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sDf-rU-bid" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="229" y="730"/>
+            <point key="canvasLocation" x="443" y="804"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jft-sA-jRj">
+            <objects>
+                <viewController id="UUc-x6-k48" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4AO-DK-bqJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="gT7-C4-LuC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LQK-v0-0TN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sq-rW-tbd" customClass="GradientView" customModule="WWDC15" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="402" id="Z9v-3p-WOs"/>
+                                    <constraint firstAttribute="height" constant="408" id="xkg-8B-7Ox"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="kRadialGradientType"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.81757387907608692" green="0.81757387907608692" blue="0.81757387907608692" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Z9v-3p-WOs"/>
+                                        <exclude reference="xkg-8B-7Ox"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="9sq-rW-tbd" secondAttribute="centerX" id="17V-Gv-tdz"/>
+                            <constraint firstItem="9sq-rW-tbd" firstAttribute="top" secondItem="4AO-DK-bqJ" secondAttribute="bottom" id="3Wm-U0-HgC"/>
+                            <constraint firstItem="9sq-rW-tbd" firstAttribute="leading" secondItem="LQK-v0-0TN" secondAttribute="leading" id="JwD-I5-acU"/>
+                            <constraint firstAttribute="trailing" secondItem="9sq-rW-tbd" secondAttribute="trailing" id="Pbg-vT-ZLZ"/>
+                            <constraint firstAttribute="centerY" secondItem="9sq-rW-tbd" secondAttribute="centerY" constant="-15" id="mbW-iv-flW"/>
+                            <constraint firstItem="gT7-C4-LuC" firstAttribute="top" secondItem="9sq-rW-tbd" secondAttribute="bottom" id="zDO-D2-rCF"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="17V-Gv-tdz"/>
+                                <exclude reference="mbW-iv-flW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c03-Bc-Fkv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="89"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4F1-hv-NdQ">
@@ -283,18 +339,6 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CpM-OT-9N0" customClass="GradientView" customModule="WWDC15" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                        <color key="value" red="0.99607849120000003" green="0.99215692280000001" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                        <color key="value" white="0.66666666666666663" alpha="0.70999999999999996" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Jyy-16-Qu8">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -318,15 +362,23 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Q6u-VZ-AGD" firstAttribute="top" secondItem="CpM-OT-9N0" secondAttribute="bottom" id="Arx-U9-6qS"/>
-                            <constraint firstItem="CpM-OT-9N0" firstAttribute="leading" secondItem="VAk-pb-R7q" secondAttribute="leading" id="BwS-nL-Lcf"/>
+                            <constraint firstAttribute="trailing" secondItem="Jyy-16-Qu8" secondAttribute="trailing" id="9c4-Hg-ror"/>
+                            <constraint firstItem="Q6u-VZ-AGD" firstAttribute="top" secondItem="Jyy-16-Qu8" secondAttribute="bottom" id="HJb-ak-R0z"/>
+                            <constraint firstItem="Jyy-16-Qu8" firstAttribute="leading" secondItem="VAk-pb-R7q" secondAttribute="leading" id="J0v-V6-XVv"/>
                             <constraint firstItem="Jyy-16-Qu8" firstAttribute="leading" secondItem="VAk-pb-R7q" secondAttribute="leading" id="L2H-w9-XLl"/>
-                            <constraint firstItem="Q6u-VZ-AGD" firstAttribute="top" secondItem="Jyy-16-Qu8" secondAttribute="bottom" id="Qui-cZ-qPs"/>
                             <constraint firstItem="Jyy-16-Qu8" firstAttribute="top" secondItem="VAk-pb-R7q" secondAttribute="top" id="VKu-uz-inX"/>
-                            <constraint firstItem="CpM-OT-9N0" firstAttribute="top" secondItem="wY8-BN-ZV4" secondAttribute="bottom" id="cwM-kJ-hwG"/>
-                            <constraint firstAttribute="trailing" secondItem="CpM-OT-9N0" secondAttribute="trailing" id="j6O-RX-hLV"/>
+                            <constraint firstItem="Jyy-16-Qu8" firstAttribute="top" secondItem="wY8-BN-ZV4" secondAttribute="bottom" constant="-20" id="kS2-82-D3r"/>
                             <constraint firstAttribute="trailing" secondItem="Jyy-16-Qu8" secondAttribute="trailing" id="mq3-5h-hWz"/>
+                            <constraint firstItem="Q6u-VZ-AGD" firstAttribute="top" secondItem="Jyy-16-Qu8" secondAttribute="bottom" id="tdH-Us-hnM"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="L2H-w9-XLl"/>
+                                <exclude reference="VKu-uz-inX"/>
+                                <exclude reference="mq3-5h-hWz"/>
+                                <exclude reference="HJb-ak-R0z"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="Jyy-16-Qu8" id="Jmp-wc-WKf"/>
