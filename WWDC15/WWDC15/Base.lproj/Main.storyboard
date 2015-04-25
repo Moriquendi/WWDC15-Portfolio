@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ejX-FZ-LxP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vbp-j1-EHV">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -8,6 +8,107 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="weq-Qm-cOe">
+            <objects>
+                <viewController id="Vbp-j1-EHV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Csx-F1-MGO"/>
+                        <viewControllerLayoutGuide type="bottom" id="jej-Lq-Bmx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I8S-Ip-GpA">
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="700"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJz-JE-BFo" customClass="GradientView" customModule="WWDC15" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="800" height="700"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lateart2" translatesAutoresizingMaskIntoConstraints="NO" id="f56-YM-Ym1">
+                                        <rect key="frame" x="550" y="-50" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="f56-YM-Ym1" secondAttribute="height" multiplier="1:1" id="5RO-if-dLd"/>
+                                            <constraint firstAttribute="width" constant="250" id="u6c-Qk-VNW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffees" translatesAutoresizingMaskIntoConstraints="NO" id="oCI-zG-g6T">
+                                        <rect key="frame" x="550" y="200" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="oCI-zG-g6T" secondAttribute="height" multiplier="1:1" id="0Gs-NT-Nz9"/>
+                                            <constraint firstAttribute="width" constant="250" id="2gh-v8-w7n"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p42-rk-3TL">
+                                        <rect key="frame" x="88" y="88" width="116" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUA-Dn-WuQ">
+                                        <rect key="frame" x="88" y="151" width="350" height="122"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="Qhp-RH-Vm8"/>
+                                        </constraints>
+                                        <string key="text">I found coffee to be cos tam.I found coffee to be cos tam.I found coffee to be cos tam.I found coffee to be cos tam.I found coffee to be cos tam.I found coffee to be cos tam.I found coffee to be cos tam.I found coffee to be cos tam.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lateart" translatesAutoresizingMaskIntoConstraints="NO" id="ge4-mJ-KXe">
+                                        <rect key="frame" x="550" y="450" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="3ex-zg-WKv"/>
+                                            <constraint firstAttribute="width" secondItem="ge4-mJ-KXe" secondAttribute="height" multiplier="1:1" id="vol-Me-Hqk"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="oCI-zG-g6T" firstAttribute="trailing" secondItem="ge4-mJ-KXe" secondAttribute="trailing" id="FPH-IG-E5a"/>
+                                    <constraint firstAttribute="bottom" secondItem="ge4-mJ-KXe" secondAttribute="bottom" id="N72-5Q-olI"/>
+                                    <constraint firstItem="oCI-zG-g6T" firstAttribute="top" secondItem="f56-YM-Ym1" secondAttribute="bottom" id="cEg-mZ-DUM"/>
+                                    <constraint firstItem="KUA-Dn-WuQ" firstAttribute="top" secondItem="p42-rk-3TL" secondAttribute="bottom" constant="15" id="fZK-pd-AjP"/>
+                                    <constraint firstItem="p42-rk-3TL" firstAttribute="leading" secondItem="KUA-Dn-WuQ" secondAttribute="leading" id="g31-l7-jIN"/>
+                                    <constraint firstItem="p42-rk-3TL" firstAttribute="leading" secondItem="NJz-JE-BFo" secondAttribute="leadingMargin" constant="80" id="hzT-tr-qLJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ge4-mJ-KXe" secondAttribute="trailing" id="jWL-vl-2tq"/>
+                                    <constraint firstItem="oCI-zG-g6T" firstAttribute="trailing" secondItem="f56-YM-Ym1" secondAttribute="trailing" id="nw6-Oy-xhm"/>
+                                    <constraint firstItem="p42-rk-3TL" firstAttribute="top" secondItem="NJz-JE-BFo" secondAttribute="topMargin" constant="80" id="sDx-zQ-XzB"/>
+                                    <constraint firstItem="ge4-mJ-KXe" firstAttribute="top" secondItem="oCI-zG-g6T" secondAttribute="bottom" id="vQP-BF-JnG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.93520720104347832" green="0.93520720104347832" blue="0.93520720104347832" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.90140964675652169" green="0.90140964675652169" blue="0.90140964675652169" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qco-pY-zf4" customClass="CoffeeCupView" customModule="WWDC15" customModuleProvider="target">
+                                <rect key="frame" x="100" y="300" width="500" height="400"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="2KX-7Y-Gyg"/>
+                                    <constraint firstAttribute="width" constant="500" id="57K-9z-UY9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NJz-JE-BFo" firstAttribute="top" secondItem="Csx-F1-MGO" secondAttribute="bottom" constant="-20" id="MR6-Rf-Nhk"/>
+                            <constraint firstItem="qco-pY-zf4" firstAttribute="leading" secondItem="I8S-Ip-GpA" secondAttribute="leading" constant="100" id="U8g-LO-LQy"/>
+                            <constraint firstAttribute="trailing" secondItem="NJz-JE-BFo" secondAttribute="trailing" id="fWw-Iz-0zH"/>
+                            <constraint firstItem="jej-Lq-Bmx" firstAttribute="top" secondItem="qco-pY-zf4" secondAttribute="bottom" id="fvh-xw-42C"/>
+                            <constraint firstItem="jej-Lq-Bmx" firstAttribute="top" secondItem="NJz-JE-BFo" secondAttribute="bottom" id="kDs-rK-Zxn"/>
+                            <constraint firstItem="NJz-JE-BFo" firstAttribute="leading" secondItem="I8S-Ip-GpA" secondAttribute="leading" id="vzs-LJ-ah8"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="800" height="700"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0fm-8Z-ZpL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1793" y="23"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -352,7 +453,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WWz-Sy-Hun" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1019" y="400"/>
+            <point key="canvasLocation" x="619" y="392"/>
         </scene>
         <!--Hacks View Controller-->
         <scene sceneID="5s6-Cp-dNA">
@@ -713,6 +814,9 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
         <image name="CHLogo" width="109" height="99"/>
         <image name="applelog" width="539" height="523"/>
         <image name="cocoaheads" width="960" height="636"/>
+        <image name="coffees" width="548" height="731"/>
+        <image name="lateart" width="576" height="576"/>
+        <image name="lateart2" width="783" height="783"/>
         <image name="panda3" width="567" height="432"/>
     </resources>
 </document>
