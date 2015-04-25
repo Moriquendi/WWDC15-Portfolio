@@ -17,10 +17,25 @@ class ProjectCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
 
         self.backgroundColor = UIColor.redColor()
-        self.layer.shadowColor = UIColor.blackColor().CGColor
-        self.layer.shadowOpacity = 0.5
-        self.clipsToBounds = false
-        self.layer.shadowRadius = 20
+        self.clipsToBounds = true
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.initialize()
+    }
+
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.initialize()
+    }
+
+    
+    func initialize() {
+       let contentView = NSBundle.mainBundle().loadNibNamed("ProjectCollectionViewCell", owner: self, options:nil).first as! UIView
+        contentView.frame = self.bounds
+        contentView.autoresizingMask = .FlexibleWidth | .FlexibleHeight
+        self.addSubview(contentView)
     }
 
 }

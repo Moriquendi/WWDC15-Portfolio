@@ -17,13 +17,6 @@ class DSAnimatedAppleView: UIView {
     func initialize() {
         self.circles = []
         self.loadCircles()
-        
-        let tap = UITapGestureRecognizer(target: self, action: Selector("meh"))
-        self.addGestureRecognizer(tap)
-    }
-    
-    func meh() {
-        self.startAnimation()
     }
     
     func shuffle<C: MutableCollectionType where C.Index == Int>(var list: C) -> C {
@@ -32,16 +25,23 @@ class DSAnimatedAppleView: UIView {
             let j = Int(arc4random_uniform(UInt32(c - i))) + i
             swap(&list[i], &list[j])
         }
+
         return list
     }
     
-    func startAnimation() {
+    var completionBlock: (() -> Void)?
+    func animate(completion: ((Void) -> Void)?)
+    {
+        self.completionBlock = completion
+        
         for circleView in self.circles {
             circleView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, self.bounds.size.height)
+            circleView.hidden = false
         }
 
         var idx = 0
         for circleView in shuffle(self.circles) {
+            circleView.tag = idx
             UIView.animateWithDuration(
                 2,
                 delay: NSTimeInterval(0.01 * CGFloat(idx)),
@@ -53,16 +53,20 @@ class DSAnimatedAppleView: UIView {
                     circleView.transform = CGAffineTransformIdentity
                 })
                 { (finished) -> Void in
-                    self.animateOut()
+                    if (circleView.tag == self.circles.count - 1) {
+                        self.animateOut()
+                    }
                 }
             
             idx = idx + 1
         }
     }
     
-    func animateOut() {
+    func animateOut()
+    {
         var idx = 0
         for circleView in shuffle(self.circles) {
+            circleView.tag = idx
             UIView.animateWithDuration(
                 1.3,
                 delay: NSTimeInterval(1.5 + 0.005 * CGFloat(idx)),
@@ -70,10 +74,12 @@ class DSAnimatedAppleView: UIView {
                 animations:
                 { () -> Void in
                     circleView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, -self.bounds.size.height)
-                })
-                { (finished) -> Void in
-                    
-            }
+                },
+                completion: { (finished) -> Void in
+                    if (circleView.tag == self.circles.count - 1) {
+                        self.completionBlock!()
+                    }
+            })
             
             idx = idx + 1
         }
@@ -98,6 +104,7 @@ class DSAnimatedAppleView: UIView {
                 brightness: 0.84,
                 alpha: 0.8)
             circle.label.hidden = true
+            circle.hidden = true
         })
     }
     

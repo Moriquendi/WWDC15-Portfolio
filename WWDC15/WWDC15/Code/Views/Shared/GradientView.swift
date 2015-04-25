@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 @IBDesignable
 class GradientView: UIView {
     
@@ -67,7 +66,7 @@ class GradientView: UIView {
     }
     
     func reloadLayers() {
-        self.layer.sublayers?.first?.removeFromSuperlayer()
+        self.gradientLayer?.removeFromSuperlayer()
         
         if (self.type == kLinearGradientType) {
             let linearGradient = CAGradientLayer()

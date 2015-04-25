@@ -20,9 +20,6 @@ UIViewControllerTransitioningDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var nib = UINib(nibName: "ProjectCollectionViewCell", bundle: nil)
-        self.collectionView.registerNib(nib, forCellWithReuseIdentifier: kProjectCellIdentifier)
         self.collectionView.decelerationRate = UIScrollViewDecelerationRateFast
     }
     
