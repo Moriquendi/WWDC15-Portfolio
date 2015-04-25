@@ -11,6 +11,8 @@
 		903F5C921AE04172008E1FAB /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903F5C911AE04172008E1FAB /* GradientView.swift */; };
 		903F5C961AE04ACA008E1FAB /* ProjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903F5C941AE04ACA008E1FAB /* ProjectDetailsViewController.swift */; };
 		90476B651AE7AA61002CAF31 /* TunelCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 90476B641AE7AA61002CAF31 /* TunelCollectionViewLayout.m */; };
+		904F02581AEBB1D300530132 /* AGHacksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904F02571AEBB1D300530132 /* AGHacksViewController.swift */; };
+		904F025A1AEBB24500530132 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904F02591AEBB24500530132 /* ImageCollectionViewCell.swift */; };
 		906BBF7E1AE8216B005E8DF5 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BBF7D1AE8216B005E8DF5 /* MeViewController.swift */; };
 		906BBF801AE821BA005E8DF5 /* PolandMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BBF7F1AE821BA005E8DF5 /* PolandMapView.swift */; };
 		9070533E1ADF00C700DC8E27 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070533D1ADF00C700DC8E27 /* ProjectsViewController.swift */; };
@@ -47,6 +49,8 @@
 		903F5C941AE04ACA008E1FAB /* ProjectDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectDetailsViewController.swift; path = Code/Controllers/ProjectDetailsViewController.swift; sourceTree = "<group>"; };
 		90476B631AE7AA61002CAF31 /* TunelCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TunelCollectionViewLayout.h; path = Code/Utils/TunelCollectionViewLayout.h; sourceTree = "<group>"; };
 		90476B641AE7AA61002CAF31 /* TunelCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TunelCollectionViewLayout.m; path = Code/Utils/TunelCollectionViewLayout.m; sourceTree = "<group>"; };
+		904F02571AEBB1D300530132 /* AGHacksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AGHacksViewController.swift; path = Code/Controllers/AGHacksViewController.swift; sourceTree = "<group>"; };
+		904F02591AEBB24500530132 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCollectionViewCell.swift; path = Code/Views/Cells/ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		906BBF7D1AE8216B005E8DF5 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MeViewController.swift; path = Code/Controllers/MeViewController.swift; sourceTree = "<group>"; };
 		906BBF7F1AE821BA005E8DF5 /* PolandMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PolandMapView.swift; path = Code/Views/PolandMapView.swift; sourceTree = "<group>"; };
 		9070533D1ADF00C700DC8E27 /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectsViewController.swift; path = Code/Controllers/ProjectsViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 				9092A04D1AE3DBBB00EFE45E /* CirclesEditorViewController.swift */,
 				909757E01AE6FFB500F858AA /* IntoTheWildViewController.swift */,
 				906BBF7D1AE8216B005E8DF5 /* MeViewController.swift */,
+				904F02571AEBB1D300530132 /* AGHacksViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 			children = (
 				907053491ADF041000DC8E27 /* ProjectCollectionViewCell.swift */,
 				9070534A1ADF041000DC8E27 /* ProjectCollectionViewCell.xib */,
+				904F02591AEBB24500530132 /* ImageCollectionViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -344,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				904F025A1AEBB24500530132 /* ImageCollectionViewCell.swift in Sources */,
 				906BBF7E1AE8216B005E8DF5 /* MeViewController.swift in Sources */,
 				9070534B1ADF041000DC8E27 /* ProjectCollectionViewCell.swift in Sources */,
 				9070533E1ADF00C700DC8E27 /* ProjectsViewController.swift in Sources */,
@@ -351,6 +358,7 @@
 				903F5C921AE04172008E1FAB /* GradientView.swift in Sources */,
 				909AD2E61ADD7FA2003344F7 /* ViewController.swift in Sources */,
 				9092A04E1AE3DBBB00EFE45E /* CirclesEditorViewController.swift in Sources */,
+				904F02581AEBB1D300530132 /* AGHacksViewController.swift in Sources */,
 				908037F41AE26A4C000CE771 /* SpreadingTransition.swift in Sources */,
 				903F5C961AE04ACA008E1FAB /* ProjectDetailsViewController.swift in Sources */,
 				90D047D11AEB07270067853C /* CCARadialGradientLayer.m in Sources */,

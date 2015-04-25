@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jqW-ef-ZK8">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -333,64 +333,141 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
             </objects>
             <point key="canvasLocation" x="1371" y="288"/>
         </scene>
-        <!--View Controller-->
+        <!--Hacks View Controller-->
         <scene sceneID="5s6-Cp-dNA">
             <objects>
-                <viewController id="jqW-ef-ZK8" sceneMemberID="viewController">
+                <viewController id="jqW-ef-ZK8" customClass="AGHacksViewController" customModule="WWDC15" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g7Y-sA-5hR"/>
                         <viewControllerLayoutGuide type="bottom" id="W9V-Qf-TjD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jmZ-NN-fcf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="968"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vkB-Un-C01">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="278"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AGHacks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoP-zj-uXQ">
-                                <rect key="frame" x="16" y="289" width="165" height="31"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1EV-rM-krs">
-                                <rect key="frame" x="16" y="328" width="562" height="108"/>
-                                <string key="text">I had a priviliage to organize the biggest student hackathon in Krakow on the well-known polish university - AGH.I had a priviliage to organize the biggest student hackathon in Krakow on the well-known polish university - AGH.I had a priviliage to organize the biggest student hackathon in Krakow on the well-known polish university - AGH.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="On9-pz-Dib">
-                                <rect key="frame" x="0.0" y="444" width="600" height="208"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cz6-M5-Baw">
-                                    <size key="itemSize" width="200" height="200"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="cxk-FN-aC1">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KoF-rf-bSE">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="948"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="73o-Os-7Wu">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="950"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0x-Pi-4Dd">
+                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="576"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="m0x-Pi-4Dd" secondAttribute="height" multiplier="16:9" id="ilR-Xz-kBK"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AGHacks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxj-lT-nQT">
+                                                <rect key="frame" x="8" y="584" width="215" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="50"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5Hj-5R-Ql2">
+                                                <rect key="frame" x="0.0" y="733" width="1024" height="250"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="250" id="4O7-xW-jjs"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="14J-pv-ruF">
+                                                    <size key="itemSize" width="250" height="250"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kImageCell" id="whp-0d-Khz" customClass="ImageCollectionViewCell" customModule="WWDC15" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        </view>
+                                                        <color key="backgroundColor" white="0.81082993660000002" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="jqW-ef-ZK8" id="5A5-wH-esr"/>
+                                                    <outlet property="delegate" destination="jqW-ef-ZK8" id="Rxw-P4-VQ2"/>
+                                                </connections>
+                                            </collectionView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cu-sJ-OJy">
+                                                <rect key="frame" x="8" y="652" width="1008" height="61"/>
+                                                <string key="text">This year, together with a group of close friends, we organized the biggest hackathon in Kraków - AGHacks. The event gathered 200 enthusiastic programmers, designers and even musicians. I am thrilled that I could lead organizers team for few months and help newcomers overcome obstacles when starting a journey in IT world.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AGHacksLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ifU-Mn-Njm">
+                                                <rect key="frame" x="846" y="476" width="150" height="150"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ifU-Mn-Njm" secondAttribute="height" multiplier="1:1" id="fMr-BB-Md9"/>
+                                                    <constraint firstAttribute="width" constant="150" id="yhS-OF-Y7P"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="5Hj-5R-Ql2" firstAttribute="top" secondItem="3cu-sJ-OJy" secondAttribute="bottom" constant="20" id="04b-Hk-uOw"/>
+                                            <constraint firstItem="ifU-Mn-Njm" firstAttribute="top" secondItem="m0x-Pi-4Dd" secondAttribute="bottom" constant="-100" id="6N9-L7-9EO"/>
+                                            <constraint firstItem="3cu-sJ-OJy" firstAttribute="top" secondItem="Gxj-lT-nQT" secondAttribute="bottom" constant="8" symbolic="YES" id="8Mq-oM-fFJ"/>
+                                            <constraint firstItem="m0x-Pi-4Dd" firstAttribute="leading" secondItem="73o-Os-7Wu" secondAttribute="leading" id="ACB-Tz-G6S"/>
+                                            <constraint firstAttribute="trailing" secondItem="m0x-Pi-4Dd" secondAttribute="trailing" id="F3B-m6-4sX"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="3cu-sJ-OJy" secondAttribute="trailing" id="IP9-VG-wY6"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="ifU-Mn-Njm" secondAttribute="trailing" constant="20" id="Ls6-rp-vFe"/>
+                                            <constraint firstItem="Gxj-lT-nQT" firstAttribute="top" secondItem="m0x-Pi-4Dd" secondAttribute="bottom" constant="8" id="QQH-xs-C9r"/>
+                                            <constraint firstAttribute="trailing" secondItem="5Hj-5R-Ql2" secondAttribute="trailing" id="XNI-qY-3UU"/>
+                                            <constraint firstAttribute="height" constant="950" id="ZmU-sl-Wub"/>
+                                            <constraint firstItem="5Hj-5R-Ql2" firstAttribute="leading" secondItem="73o-Os-7Wu" secondAttribute="leading" id="bfu-6k-qs0"/>
+                                            <constraint firstItem="m0x-Pi-4Dd" firstAttribute="top" secondItem="73o-Os-7Wu" secondAttribute="top" id="lXQ-Sn-bm7"/>
+                                            <constraint firstAttribute="height" constant="600" id="pc0-XS-sgO"/>
+                                            <constraint firstItem="3cu-sJ-OJy" firstAttribute="leading" secondItem="Gxj-lT-nQT" secondAttribute="leading" id="z03-i7-EQi"/>
+                                            <constraint firstItem="Gxj-lT-nQT" firstAttribute="leading" secondItem="73o-Os-7Wu" secondAttribute="leadingMargin" id="zQS-md-2XN"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="pc0-XS-sgO"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="73o-Os-7Wu" secondAttribute="bottom" constant="80" id="LKS-dc-bJw"/>
+                                    <constraint firstItem="73o-Os-7Wu" firstAttribute="leading" secondItem="KoF-rf-bSE" secondAttribute="leading" id="Zt5-42-zoI"/>
+                                    <constraint firstAttribute="trailing" secondItem="73o-Os-7Wu" secondAttribute="trailing" id="hBs-oc-bvp"/>
+                                    <constraint firstItem="73o-Os-7Wu" firstAttribute="top" secondItem="KoF-rf-bSE" secondAttribute="top" id="ucc-Ev-ppw"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="KoF-rf-bSE" secondAttribute="trailing" constant="45" id="5Tg-hq-q5e"/>
+                            <constraint firstItem="W9V-Qf-TjD" firstAttribute="top" secondItem="KoF-rf-bSE" secondAttribute="bottom" id="MaC-bd-uc1"/>
+                            <constraint firstItem="73o-Os-7Wu" firstAttribute="width" secondItem="jmZ-NN-fcf" secondAttribute="width" id="Yzf-en-bIl"/>
+                            <constraint firstItem="KoF-rf-bSE" firstAttribute="top" secondItem="g7Y-sA-5hR" secondAttribute="bottom" id="aRr-FG-ncL"/>
+                            <constraint firstItem="KoF-rf-bSE" firstAttribute="leading" secondItem="jmZ-NN-fcf" secondAttribute="leading" id="czG-Cd-Cxu"/>
+                            <constraint firstAttribute="trailing" secondItem="KoF-rf-bSE" secondAttribute="trailing" id="l9b-4e-Zwq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5Tg-hq-q5e"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="600" height="800"/>
+                    <size key="freeformSize" width="1024" height="968"/>
+                    <connections>
+                        <outlet property="logoView" destination="ifU-Mn-Njm" id="aKZ-6z-7gf"/>
+                        <outlet property="movieContentView" destination="m0x-Pi-4Dd" id="XnM-8z-wju"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aix-9p-njJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1524" y="980"/>
+            <point key="canvasLocation" x="-1443" y="923"/>
         </scene>
         <!--Into The Wild View Controller-->
         <scene sceneID="1Ny-ut-Z9E">
@@ -527,6 +604,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
         </scene>
     </scenes>
     <resources>
+        <image name="AGHacksLogo" width="110" height="99"/>
         <image name="applelog" width="539" height="523"/>
         <image name="panda3" width="567" height="432"/>
     </resources>
