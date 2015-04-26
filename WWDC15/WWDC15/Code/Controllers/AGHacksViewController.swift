@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MediaPlayer
 
 class AGHacksViewController: UIViewController,
 UICollectionViewDataSource,
@@ -16,16 +17,44 @@ UICollectionViewDelegate {
     let kImageCell = "kImageCell"
     @IBOutlet weak var movieContentView: UIView!
     var images = []
+    let moviePlayer: MPMoviePlayerController!
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        let movieURL = NSBundle.mainBundle().URLForResource("aghacksPromo", withExtension: "mp4")
+        self.moviePlayer = MPMoviePlayerController(contentURL: movieURL!)
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+
+    required init(coder aDecoder: NSCoder) {
+        let movieURL = NSBundle.mainBundle().URLForResource("aghacksPromo", withExtension: "mp4")
+        self.moviePlayer = MPMoviePlayerController(contentURL: movieURL!)
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.navigationBar.translucent = true
+        self.navigationController?.navigationBar.opaque = false
+        
         self.logoView.layer.cornerRadius = self.logoView.bounds.size.width/2
         
         let imagesNames = ["aghacksteam", "aghacksteam", "aghacksteam", "aghacksteam"]
         for name in imagesNames {
             self.images = self.images.arrayByAddingObject(UIImage(named: name)!)
         }
+        
+        
+        self.navigationItem.leftBarButtonItem?.target = self
+        self.navigationItem.leftBarButtonItem?.action = Selector("dismiss")
+        
+        self.movieContentView.addSubview(self.moviePlayer.view)
+        self.moviePlayer.view.frame = self.movieContentView.bounds
+        self.moviePlayer.view.autoresizingMask = .FlexibleWidth | .FlexibleHeight
+        self.moviePlayer.play()
+    }
+    
+    func dismiss() {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     // MARK: UICollectionViewDataSource

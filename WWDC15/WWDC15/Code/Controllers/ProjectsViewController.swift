@@ -21,7 +21,15 @@ UIViewControllerTransitioningDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView.decelerationRate = UIScrollViewDecelerationRateFast
+        
+        self.navigationItem.leftBarButtonItem?.target = self
+        self.navigationItem.leftBarButtonItem?.action = Selector("dismiss")
     }
+    
+    func dismiss() {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()

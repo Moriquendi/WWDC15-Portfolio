@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X2R-XJ-vUX">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -8,10 +8,10 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Coffee View Controller-->
         <scene sceneID="weq-Qm-cOe">
             <objects>
-                <viewController id="Vbp-j1-EHV" sceneMemberID="viewController">
+                <viewController id="Vbp-j1-EHV" customClass="CoffeeViewController" customModule="WWDC15" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Csx-F1-MGO"/>
                         <viewControllerLayoutGuide type="bottom" id="jej-Lq-Bmx"/>
@@ -541,7 +541,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
         <!--Hacks View Controller-->
         <scene sceneID="5s6-Cp-dNA">
             <objects>
-                <viewController id="jqW-ef-ZK8" customClass="AGHacksViewController" customModule="WWDC15" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="jqW-ef-ZK8" customClass="AGHacksViewController" customModule="WWDC15" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g7Y-sA-5hR"/>
                         <viewControllerLayoutGuide type="bottom" id="W9V-Qf-TjD"/>
@@ -564,13 +564,13 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AGHacks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxj-lT-nQT">
-                                                <rect key="frame" x="8" y="584" width="215" height="60"/>
+                                                <rect key="frame" x="108" y="596" width="215" height="60"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="50"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.58431372549019611" green="0.10196078431372549" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5Hj-5R-Ql2">
-                                                <rect key="frame" x="0.0" y="733" width="1024" height="250"/>
+                                                <rect key="frame" x="0.0" y="766" width="1024" height="250"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="250" id="4O7-xW-jjs"/>
@@ -579,7 +579,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                                                     <size key="itemSize" width="250" height="250"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="sectionInset" minX="100" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kImageCell" id="whp-0d-Khz" customClass="ImageCollectionViewCell" customModule="WWDC15" customModuleProvider="target">
@@ -599,38 +599,38 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                                                 </connections>
                                             </collectionView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cu-sJ-OJy">
-                                                <rect key="frame" x="8" y="652" width="1008" height="61"/>
+                                                <rect key="frame" x="108" y="664" width="708" height="82"/>
                                                 <string key="text">This year, together with a group of close friends, we organized the biggest hackathon in Kraków - AGHacks. The event gathered 200 enthusiastic programmers, designers and even musicians. I am thrilled that I could lead organizers team for few months and help newcomers overcome obstacles when starting a journey in IT world.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.15287449048913049" green="0.15287449048913049" blue="0.15287449048913049" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AGHacksLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ifU-Mn-Njm">
                                                 <rect key="frame" x="846" y="476" width="150" height="150"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="1" alpha="0.70000000000000007" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ifU-Mn-Njm" secondAttribute="height" multiplier="1:1" id="fMr-BB-Md9"/>
                                                     <constraint firstAttribute="width" constant="150" id="yhS-OF-Y7P"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.92153532608695654" green="0.92153532608695654" blue="0.92153532608695654" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="5Hj-5R-Ql2" firstAttribute="top" secondItem="3cu-sJ-OJy" secondAttribute="bottom" constant="20" id="04b-Hk-uOw"/>
                                             <constraint firstItem="ifU-Mn-Njm" firstAttribute="top" secondItem="m0x-Pi-4Dd" secondAttribute="bottom" constant="-100" id="6N9-L7-9EO"/>
                                             <constraint firstItem="3cu-sJ-OJy" firstAttribute="top" secondItem="Gxj-lT-nQT" secondAttribute="bottom" constant="8" symbolic="YES" id="8Mq-oM-fFJ"/>
                                             <constraint firstItem="m0x-Pi-4Dd" firstAttribute="leading" secondItem="73o-Os-7Wu" secondAttribute="leading" id="ACB-Tz-G6S"/>
                                             <constraint firstAttribute="trailing" secondItem="m0x-Pi-4Dd" secondAttribute="trailing" id="F3B-m6-4sX"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="3cu-sJ-OJy" secondAttribute="trailing" id="IP9-VG-wY6"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="3cu-sJ-OJy" secondAttribute="trailing" constant="200" id="IP9-VG-wY6"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="ifU-Mn-Njm" secondAttribute="trailing" constant="20" id="Ls6-rp-vFe"/>
-                                            <constraint firstItem="Gxj-lT-nQT" firstAttribute="top" secondItem="m0x-Pi-4Dd" secondAttribute="bottom" constant="8" id="QQH-xs-C9r"/>
+                                            <constraint firstItem="Gxj-lT-nQT" firstAttribute="top" secondItem="m0x-Pi-4Dd" secondAttribute="bottom" constant="20" id="QQH-xs-C9r"/>
                                             <constraint firstAttribute="trailing" secondItem="5Hj-5R-Ql2" secondAttribute="trailing" id="XNI-qY-3UU"/>
                                             <constraint firstAttribute="height" constant="950" id="ZmU-sl-Wub"/>
                                             <constraint firstItem="5Hj-5R-Ql2" firstAttribute="leading" secondItem="73o-Os-7Wu" secondAttribute="leading" id="bfu-6k-qs0"/>
                                             <constraint firstItem="m0x-Pi-4Dd" firstAttribute="top" secondItem="73o-Os-7Wu" secondAttribute="top" id="lXQ-Sn-bm7"/>
                                             <constraint firstAttribute="height" constant="600" id="pc0-XS-sgO"/>
                                             <constraint firstItem="3cu-sJ-OJy" firstAttribute="leading" secondItem="Gxj-lT-nQT" secondAttribute="leading" id="z03-i7-EQi"/>
-                                            <constraint firstItem="Gxj-lT-nQT" firstAttribute="leading" secondItem="73o-Os-7Wu" secondAttribute="leadingMargin" id="zQS-md-2XN"/>
+                                            <constraint firstItem="Gxj-lT-nQT" firstAttribute="leading" secondItem="73o-Os-7Wu" secondAttribute="leadingMargin" constant="100" id="zQS-md-2XN"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -662,9 +662,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                             </mask>
                         </variation>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem title="Item" id="7jX-4p-CUM"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="mmQ-wm-7zP">
                         <barButtonItem key="leftBarButtonItem" title="Close" id="d65-Vb-uIG"/>
                     </navigationItem>
@@ -815,10 +813,10 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
             </objects>
             <point key="canvasLocation" x="3096" y="-1145"/>
         </scene>
-        <!--View Controller-->
+        <!--Cocoa Heads View Controller-->
         <scene sceneID="f8l-Q0-fv7">
             <objects>
-                <viewController id="ejX-FZ-LxP" sceneMemberID="viewController">
+                <viewController id="ejX-FZ-LxP" customClass="CocoaHeadsViewController" customModule="WWDC15" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5Mm-Er-pZg"/>
                         <viewControllerLayoutGuide type="bottom" id="Y4h-4g-LGR"/>

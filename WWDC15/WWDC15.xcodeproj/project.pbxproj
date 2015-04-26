@@ -15,6 +15,10 @@
 		904F025A1AEBB24500530132 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904F02591AEBB24500530132 /* ImageCollectionViewCell.swift */; };
 		904F025C1AEBBC6D00530132 /* LogoTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904F025B1AEBBC6D00530132 /* LogoTransitionViewController.swift */; };
 		904F025E1AEBF78300530132 /* CoffeeCupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904F025D1AEBF78300530132 /* CoffeeCupView.swift */; };
+		9060845F1AED01E700757C1F /* CoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060845E1AED01E700757C1F /* CoffeeViewController.swift */; };
+		906084611AED058E00757C1F /* CocoaHeadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906084601AED058E00757C1F /* CocoaHeadsViewController.swift */; };
+		906084631AED083700757C1F /* aghacksPromo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 906084621AED083700757C1F /* aghacksPromo.mp4 */; };
+		906084651AED087600757C1F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906084641AED087600757C1F /* MediaPlayer.framework */; };
 		906BBF7E1AE8216B005E8DF5 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BBF7D1AE8216B005E8DF5 /* MeViewController.swift */; };
 		906BBF801AE821BA005E8DF5 /* PolandMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BBF7F1AE821BA005E8DF5 /* PolandMapView.swift */; };
 		9070533E1ADF00C700DC8E27 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070533D1ADF00C700DC8E27 /* ProjectsViewController.swift */; };
@@ -55,6 +59,10 @@
 		904F02591AEBB24500530132 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCollectionViewCell.swift; path = Code/Views/Cells/ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		904F025B1AEBBC6D00530132 /* LogoTransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogoTransitionViewController.swift; path = Code/Controllers/LogoTransitionViewController.swift; sourceTree = "<group>"; };
 		904F025D1AEBF78300530132 /* CoffeeCupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoffeeCupView.swift; path = Code/Views/CoffeeCupView.swift; sourceTree = "<group>"; };
+		9060845E1AED01E700757C1F /* CoffeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoffeeViewController.swift; path = Code/Controllers/CoffeeViewController.swift; sourceTree = "<group>"; };
+		906084601AED058E00757C1F /* CocoaHeadsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CocoaHeadsViewController.swift; path = Code/Controllers/CocoaHeadsViewController.swift; sourceTree = "<group>"; };
+		906084621AED083700757C1F /* aghacksPromo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = aghacksPromo.mp4; path = Resources/aghacksPromo.mp4; sourceTree = "<group>"; };
+		906084641AED087600757C1F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		906BBF7D1AE8216B005E8DF5 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MeViewController.swift; path = Code/Controllers/MeViewController.swift; sourceTree = "<group>"; };
 		906BBF7F1AE821BA005E8DF5 /* PolandMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PolandMapView.swift; path = Code/Views/PolandMapView.swift; sourceTree = "<group>"; };
 		9070533D1ADF00C700DC8E27 /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectsViewController.swift; path = Code/Controllers/ProjectsViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				906084651AED087600757C1F /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +139,8 @@
 				906BBF7D1AE8216B005E8DF5 /* MeViewController.swift */,
 				904F02571AEBB1D300530132 /* AGHacksViewController.swift */,
 				904F025B1AEBBC6D00530132 /* LogoTransitionViewController.swift */,
+				9060845E1AED01E700757C1F /* CoffeeViewController.swift */,
+				906084601AED058E00757C1F /* CocoaHeadsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -180,6 +191,7 @@
 		909AD2D51ADD7FA2003344F7 = {
 			isa = PBXGroup;
 			children = (
+				906084641AED087600757C1F /* MediaPlayer.framework */,
 				909AD2E01ADD7FA2003344F7 /* WWDC15 */,
 				909AD2F61ADD7FA2003344F7 /* WWDC15Tests */,
 				909AD2DF1ADD7FA2003344F7 /* Products */,
@@ -238,6 +250,7 @@
 		90C3E8C31AE6B60E006338F7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				906084621AED083700757C1F /* aghacksPromo.mp4 */,
 				90C3E8C11AE6B60B006338F7 /* points.plist */,
 			);
 			name = Resources;
@@ -333,6 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				906084631AED083700757C1F /* aghacksPromo.mp4 in Resources */,
 				90C3E8C21AE6B60B006338F7 /* points.plist in Resources */,
 				9070534C1ADF041000DC8E27 /* ProjectCollectionViewCell.xib in Resources */,
 				909AD2E91ADD7FA2003344F7 /* Main.storyboard in Resources */,
@@ -368,6 +382,8 @@
 				904F02581AEBB1D300530132 /* AGHacksViewController.swift in Sources */,
 				908037F41AE26A4C000CE771 /* SpreadingTransition.swift in Sources */,
 				903F5C961AE04ACA008E1FAB /* ProjectDetailsViewController.swift in Sources */,
+				9060845F1AED01E700757C1F /* CoffeeViewController.swift in Sources */,
+				906084611AED058E00757C1F /* CocoaHeadsViewController.swift in Sources */,
 				90D047D11AEB07270067853C /* CCARadialGradientLayer.m in Sources */,
 				904F025E1AEBF78300530132 /* CoffeeCupView.swift in Sources */,
 				909757E11AE6FFB500F858AA /* IntoTheWildViewController.swift in Sources */,
