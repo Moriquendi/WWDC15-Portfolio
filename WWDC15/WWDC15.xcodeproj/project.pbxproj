@@ -19,6 +19,7 @@
 		906084611AED058E00757C1F /* CocoaHeadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906084601AED058E00757C1F /* CocoaHeadsViewController.swift */; };
 		906084631AED083700757C1F /* aghacksPromo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 906084621AED083700757C1F /* aghacksPromo.mp4 */; };
 		906084651AED087600757C1F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906084641AED087600757C1F /* MediaPlayer.framework */; };
+		9066AFAB1AED1CE200137285 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9066AFAA1AED1CE200137285 /* Project.swift */; };
 		906BBF7E1AE8216B005E8DF5 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BBF7D1AE8216B005E8DF5 /* MeViewController.swift */; };
 		906BBF801AE821BA005E8DF5 /* PolandMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BBF7F1AE821BA005E8DF5 /* PolandMapView.swift */; };
 		9070533E1ADF00C700DC8E27 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070533D1ADF00C700DC8E27 /* ProjectsViewController.swift */; };
@@ -63,6 +64,7 @@
 		906084601AED058E00757C1F /* CocoaHeadsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CocoaHeadsViewController.swift; path = Code/Controllers/CocoaHeadsViewController.swift; sourceTree = "<group>"; };
 		906084621AED083700757C1F /* aghacksPromo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = aghacksPromo.mp4; path = Resources/aghacksPromo.mp4; sourceTree = "<group>"; };
 		906084641AED087600757C1F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		9066AFAA1AED1CE200137285 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Project.swift; path = Code/Model/Project.swift; sourceTree = "<group>"; };
 		906BBF7D1AE8216B005E8DF5 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MeViewController.swift; path = Code/Controllers/MeViewController.swift; sourceTree = "<group>"; };
 		906BBF7F1AE821BA005E8DF5 /* PolandMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PolandMapView.swift; path = Code/Views/PolandMapView.swift; sourceTree = "<group>"; };
 		9070533D1ADF00C700DC8E27 /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectsViewController.swift; path = Code/Controllers/ProjectsViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,14 @@
 			name = Shared;
 			sourceTree = "<group>";
 		};
+		9066AFAC1AED1CE500137285 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9066AFAA1AED1CE200137285 /* Project.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		9070533F1ADF00CA00DC8E27 /* Code */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +135,7 @@
 				907053401ADF00CF00DC8E27 /* Controllers */,
 				907053411ADF023500DC8E27 /* WWDC15-Bridging-Header.h */,
 				907053481ADF03CF00DC8E27 /* Views */,
+				9066AFAC1AED1CE500137285 /* Model */,
 			);
 			name = Code;
 			sourceTree = "<group>";
@@ -377,6 +388,7 @@
 				904F025C1AEBBC6D00530132 /* LogoTransitionViewController.swift in Sources */,
 				906BBF801AE821BA005E8DF5 /* PolandMapView.swift in Sources */,
 				903F5C921AE04172008E1FAB /* GradientView.swift in Sources */,
+				9066AFAB1AED1CE200137285 /* Project.swift in Sources */,
 				909AD2E61ADD7FA2003344F7 /* ViewController.swift in Sources */,
 				9092A04E1AE3DBBB00EFE45E /* CirclesEditorViewController.swift in Sources */,
 				904F02581AEBB1D300530132 /* AGHacksViewController.swift in Sources */,

@@ -8,6 +8,7 @@
 
 @interface PBDCarouselCollectionViewLayout : UICollectionViewLayout
 
+@property(nonatomic, strong) NSIndexPath *indexPathForCenteredItem;
 @property(nonatomic) CGSize itemSize;
 @property(nonatomic) CGFloat interItemSpace;
 

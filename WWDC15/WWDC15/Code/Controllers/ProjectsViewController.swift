@@ -17,9 +17,46 @@ UIViewControllerTransitioningDelegate {
     let kProjectCellIdentifier = "kProjectCellIdentifier"
     
     @IBOutlet weak var collectionView: UICollectionView!
+    var projects = Array<Project>()
+    
+    func loadModel() {
+        let pandaApp = Project()
+        pandaApp.title = "Karate Panda"
+        pandaApp.appDescription = " meh meh"
+        pandaApp.images = [UIImage(named: "pandMacs")!]
+        
+        let farmApp = Project()
+        farmApp.title = "Farm 2"
+        farmApp.appDescription = " meh meh"
+        farmApp.images = [UIImage(named: "farm1")!,
+                            UIImage(named: "farm2")!]
+        
+        let tapsApp = Project()
+        tapsApp.title = "Smart Taps"
+        tapsApp.appDescription = "meh meh"
+        tapsApp.images = [UIImage(named: "smart1")!]
+        
+        let tvtApp = Project()
+        tvtApp.title = "TVT - Online TV App"
+        tvtApp.appDescription = "TVT"
+        tvtApp.images = [UIImage(named: "tvt")!]
+        
+        let ggjApp = Project()
+        ggjApp.title = "Global Game Jam app"
+        ggjApp.appDescription = "meh meh"
+        ggjApp.images = [UIImage(named: "krakjam")!]
+        
+        let mhacksApp = Project()
+        mhacksApp.title = "Sched.me - MHacks hackathon app"
+        mhacksApp.appDescription = "meh"
+        mhacksApp.images = [UIImage(named: "sched1")!]
+        
+        self.projects = [pandaApp, farmApp, tapsApp, tvtApp, ggjApp, mhacksApp]
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.loadModel()
         self.collectionView.decelerationRate = UIScrollViewDecelerationRateFast
         
         self.navigationItem.leftBarButtonItem?.target = self
@@ -54,13 +91,19 @@ UIViewControllerTransitioningDelegate {
                 default:
                     println("Do nothing")
             }
+            
+            
+            if let selectedCellIndex = self.collectionView.indexPathsForSelectedItems().first as? NSIndexPath,
+                let detailsVC = vc as? ProjectDetailsViewController {
+                    detailsVC.project = self.projects[selectedCellIndex.item]
+            }
         }
     }
     
     // MARK: UICollectionViewDataSource
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return self.projects.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -76,14 +119,23 @@ UIViewControllerTransitioningDelegate {
     // MARK:  UICollectionViewDelegate
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        self.performSegueWithIdentifier(kProjectDetailsSegue, sender: self)
+
+        let cell = collectionView.cellForItemAtIndexPath(indexPath)
+        if (cell!.center.x < collectionView.contentOffset.x ||
+            cell!.center.x > collectionView.contentOffset.x + collectionView.bounds.size.width) {
+        }
+        else {
+            self.performSegueWithIdentifier(kProjectDetailsSegue, sender: self)
+        }
     }
     
     // MARK: ProjectsViewController
     
     func configureCell(cell: UICollectionViewCell, atIndexPath indexPath: NSIndexPath) {
         if let carouselCell = cell as? ProjectCollectionViewCell {
-            carouselCell.imageView.image = UIImage(named: "panda3")
+            let project = self.projects[indexPath.item]
+            carouselCell.imageView.image = project.images.first
+            carouselCell.titleLabel.text = project.title
         }
     }
  

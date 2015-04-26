@@ -8,7 +8,6 @@
 @interface PBDCarouselCollectionViewLayout ()
 @property(nonatomic) CGFloat rightLeftMargin;
 @property(nonatomic) CGFloat topBottomMargin;
-@property(nonatomic, strong) NSIndexPath *indexPathForCenteredItem;
 @end
 
 @implementation PBDCarouselCollectionViewLayout
@@ -18,6 +17,7 @@
 - (void)prepareLayout {
     [super prepareLayout];
 
+    self.indexPathForCenteredItem = [NSIndexPath indexPathForItem:0 inSection:0];
     CGSize collectionViewSize = self.collectionView.bounds.size;
     self.rightLeftMargin = (collectionViewSize.width - self.itemSize.width) / 2;
     self.topBottomMargin = (collectionViewSize.height - self.itemSize.height) / 2;
