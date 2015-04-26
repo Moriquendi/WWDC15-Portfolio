@@ -22,33 +22,33 @@ UIViewControllerTransitioningDelegate {
     func loadModel() {
         let pandaApp = Project()
         pandaApp.title = "Karate Panda"
-        pandaApp.appDescription = " meh meh"
+        pandaApp.appDescription = "Karate Panda is a platform PC game that I developed when I was 16. It's my first game which was published by PlayWay. It took me one year of afterschool work to finish it."
         pandaApp.images = [UIImage(named: "pandMacs")!]
         
         let farmApp = Project()
         farmApp.title = "Farm 2"
-        farmApp.appDescription = " meh meh"
+        farmApp.appDescription = "Farm 2 is a time management game published by PlayWay. Gameplay involved taking care of up to nine farms at once and hunting for angry boars. I was the lead iOS programmer in a team."
         farmApp.images = [UIImage(named: "farm1")!,
                             UIImage(named: "farm2")!]
         
         let tapsApp = Project()
         tapsApp.title = "Smart Taps"
-        tapsApp.appDescription = "meh meh"
+        tapsApp.appDescription = "Smart Taps is an educational game for kids developed by me and my friend in several days. The game has beautifull animations and lovely sound effects."
         tapsApp.images = [UIImage(named: "smart1")!]
         
         let tvtApp = Project()
         tvtApp.title = "TVT - Online TV App"
-        tvtApp.appDescription = "TVT"
+        tvtApp.appDescription = "TVT is a leading independent digital media lab providing and delivering content and systems for the world's principal broadcasters. With our help, they are entering now the world of mobile with a Netflix-like application for enterprise users."
         tvtApp.images = [UIImage(named: "tvt")!]
         
         let ggjApp = Project()
         ggjApp.title = "Global Game Jam app"
-        ggjApp.appDescription = "meh meh"
+        ggjApp.appDescription = "Four years ago, I attended my first 48-hours hackathon - Global Game Jam. Back then, me and my friends knew almost nothing about programming. Even though, we've managed to finish a simple and funny iOS game."
         ggjApp.images = [UIImage(named: "krakjam")!]
         
         let mhacksApp = Project()
         mhacksApp.title = "Sched.me - MHacks hackathon app"
-        mhacksApp.appDescription = "meh"
+        mhacksApp.appDescription = "Last year, I've attended MHacks - probabbly the biggest hackathon in the world. I've been working with my friend on an iOS app that lets you schedule meetings with a group of people."
         mhacksApp.images = [UIImage(named: "sched1")!]
         
         self.projects = [pandaApp, farmApp, tapsApp, tvtApp, ggjApp, mhacksApp]

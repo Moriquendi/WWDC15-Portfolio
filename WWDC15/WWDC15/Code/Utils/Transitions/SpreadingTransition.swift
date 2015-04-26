@@ -44,9 +44,9 @@ class SpreadingTransition: NSObject, UIViewControllerAnimatedTransitioning {
         var rectInWindow = self.referenceView.convertRect(self.referenceView.bounds, toView: nil)
         if (!dismissing) {
             rectInWindow.origin.x -= 70
-            rectInWindow.origin.y -= 70
+            rectInWindow.origin.y -= 60
             rectInWindow.size.width += 140
-            rectInWindow.size.height += 140
+            rectInWindow.size.height += 80
         }
         self.finalFrame = rectInWindow
         
