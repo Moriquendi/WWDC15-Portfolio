@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vbp-j1-EHV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -40,7 +40,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p42-rk-3TL">
                                         <rect key="frame" x="88" y="88" width="116" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUA-Dn-WuQ">
@@ -50,7 +50,7 @@
                                         </constraints>
                                         <string key="text">I found coffee to be cos tam.I found coffee to be cos tam.I found coffee to be cos tam.I found coffee to be cos tam.I found coffee to be cos tam.I found coffee to be cos tam.I found coffee to be cos tam.I found coffee to be cos tam.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lateart" translatesAutoresizingMaskIntoConstraints="NO" id="ge4-mJ-KXe">
@@ -102,12 +102,15 @@
                             <constraint firstItem="NJz-JE-BFo" firstAttribute="leading" secondItem="I8S-Ip-GpA" secondAttribute="leading" id="vzs-LJ-ah8"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="OZ2-0g-0FQ">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="9NO-U7-RNO"/>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="800" height="700"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0fm-8Z-ZpL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1793" y="23"/>
+            <point key="canvasLocation" x="2191" y="937"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -147,7 +150,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="VXa-rJ-tdK" kind="show" id="xyq-zw-6ni"/>
+                                    <segue destination="VXa-rJ-tdK" kind="presentation" modalTransitionStyle="crossDissolve" id="xyq-zw-6ni"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -173,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1114" y="-358"/>
+            <point key="canvasLocation" x="-2702" y="-990"/>
         </scene>
         <!--Circles Editor View Controller-->
         <scene sceneID="C3F-KI-LVM">
@@ -264,7 +267,81 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-391" y="1764"/>
+            <point key="canvasLocation" x="-1491" y="1732"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="U39-mv-WRK">
+            <objects>
+                <viewController id="X2R-XJ-vUX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CIg-rl-UjN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zau-LU-7Mw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iKm-gF-EGb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3b-e8-baN">
+                                <rect key="frame" x="158" y="159" width="88" height="30"/>
+                                <state key="normal" title="Into The wild">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Pax-UB-OOx" kind="show" id="Fay-Wv-ym0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcy-m5-63h">
+                                <rect key="frame" x="158" y="190" width="45" height="30"/>
+                                <state key="normal" title="Coffee">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Grr-tO-GAG" kind="show" id="NA4-Vp-GMe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmt-SR-Sb8">
+                                <rect key="frame" x="158" y="239" width="65" height="30"/>
+                                <state key="normal" title="AGHacks">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xh1-oC-ZhZ" kind="show" id="jLu-Av-bCv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLV-v5-p2q">
+                                <rect key="frame" x="163" y="285" width="67" height="30"/>
+                                <state key="normal" title="About me">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vrs-nH-9XS" kind="show" id="8ne-8F-ucs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rw-Z9-5cQ">
+                                <rect key="frame" x="160" y="332" width="61" height="30"/>
+                                <state key="normal" title="My Apps">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DLn-z3-oq6" kind="show" id="Xbe-2M-AHe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJu-m3-s25">
+                                <rect key="frame" x="160" y="370" width="94" height="30"/>
+                                <state key="normal" title="Cocoa Heads">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="y9I-AT-ecJ" kind="show" id="YCZ-R3-7mq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLk-gX-knU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1017" y="-1020"/>
         </scene>
         <!--Me View Controller-->
         <scene sceneID="hM7-j6-guk">
@@ -334,13 +411,16 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="Ash-zx-0RB">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="seB-xm-uqS"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="polandMapView" destination="hPC-L1-Bb7" id="t6k-lD-GFb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sDf-rU-bid" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744" y="-315"/>
+            <point key="canvasLocation" x="2244" y="-1859"/>
         </scene>
         <!--Logo Transition View Controller-->
         <scene sceneID="4F1-hv-NdQ">
@@ -369,12 +449,12 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                     </view>
                     <connections>
                         <outlet property="animatedLogoView" destination="tb2-DL-Zko" id="NLO-xF-xIY"/>
-                        <segue destination="ax9-tW-cBO" kind="show" identifier="kShowMenuSegue" id="RUC-HW-aOW"/>
+                        <segue destination="X2R-XJ-vUX" kind="presentation" identifier="kShowMenuSegue" modalTransitionStyle="crossDissolve" id="2f3-E6-E0R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r13-Os-G4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-140" y="-418"/>
+            <point key="canvasLocation" x="-1952" y="-1014"/>
         </scene>
         <!--Projects View Controller-->
         <scene sceneID="0Jt-m3-OWT">
@@ -389,7 +469,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iEq-4R-LSo" customClass="GradientView" customModule="WWDC15" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="startColor">
@@ -402,7 +482,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Jyy-16-Qu8">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewLayout key="collectionViewLayout" id="Xwr-2s-hcZ" customClass="PBDCarouselCollectionViewLayout"/>
                                 <cells>
@@ -430,7 +510,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                             <constraint firstItem="Jyy-16-Qu8" firstAttribute="leading" secondItem="VAk-pb-R7q" secondAttribute="leading" id="L2H-w9-XLl"/>
                             <constraint firstAttribute="trailing" secondItem="iEq-4R-LSo" secondAttribute="trailing" id="Rcs-jg-2NE"/>
                             <constraint firstItem="Jyy-16-Qu8" firstAttribute="top" secondItem="VAk-pb-R7q" secondAttribute="top" id="VKu-uz-inX"/>
-                            <constraint firstItem="Jyy-16-Qu8" firstAttribute="top" secondItem="wY8-BN-ZV4" secondAttribute="bottom" constant="-20" id="kS2-82-D3r"/>
+                            <constraint firstItem="Jyy-16-Qu8" firstAttribute="top" secondItem="wY8-BN-ZV4" secondAttribute="bottom" id="kS2-82-D3r"/>
                             <constraint firstAttribute="trailing" secondItem="Jyy-16-Qu8" secondAttribute="trailing" id="mq3-5h-hWz"/>
                             <constraint firstItem="iEq-4R-LSo" firstAttribute="leading" secondItem="VAk-pb-R7q" secondAttribute="leading" id="nzQ-SP-d0M"/>
                             <constraint firstItem="iEq-4R-LSo" firstAttribute="top" secondItem="wY8-BN-ZV4" secondAttribute="bottom" constant="-20" id="q1E-fI-ca5"/>
@@ -446,6 +526,9 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="ivK-4F-oom">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="SSu-Nk-ZT1"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="Jyy-16-Qu8" id="Jmp-wc-WKf"/>
                         <segue destination="tam-w0-L4r" kind="presentation" identifier="kProjectDetailsSegue" id="IWO-77-08A"/>
@@ -453,7 +536,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WWz-Sy-Hun" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="619" y="392"/>
+            <point key="canvasLocation" x="2283" y="-1160"/>
         </scene>
         <!--Hacks View Controller-->
         <scene sceneID="5s6-Cp-dNA">
@@ -467,7 +550,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="968"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KoF-rf-bSE">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KoF-rf-bSE">
                                 <rect key="frame" x="0.0" y="20" width="1024" height="948"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="73o-Os-7Wu">
@@ -483,7 +566,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AGHacks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxj-lT-nQT">
                                                 <rect key="frame" x="8" y="584" width="215" height="60"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="50"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5Hj-5R-Ql2">
@@ -519,7 +602,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                                                 <rect key="frame" x="8" y="652" width="1008" height="61"/>
                                                 <string key="text">This year, together with a group of close friends, we organized the biggest hackathon in Kraków - AGHacks. The event gathered 200 enthusiastic programmers, designers and even musicians. I am thrilled that I could lead organizers team for few months and help newcomers overcome obstacles when starting a journey in IT world.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AGHacksLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ifU-Mn-Njm">
@@ -579,6 +662,13 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                             </mask>
                         </variation>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="7jX-4p-CUM"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="mmQ-wm-7zP">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="d65-Vb-uIG"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1024" height="968"/>
@@ -589,7 +679,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aix-9p-njJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1443" y="923"/>
+            <point key="canvasLocation" x="-323" y="1409"/>
         </scene>
         <!--Into The Wild View Controller-->
         <scene sceneID="1Ny-ut-Z9E">
@@ -605,6 +695,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="p5m-tL-zZa">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewLayout key="collectionViewLayout" id="3Ya-NW-hCO" customClass="TunelCollectionViewLayout"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kCellIdentifier" id="4Zp-dS-4Mf">
@@ -631,7 +722,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZQ7-R5-aFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1864" y="-707"/>
+            <point key="canvasLocation" x="1420" y="-2571"/>
         </scene>
         <!--Project Details View Controller-->
         <scene sceneID="hRR-WU-nUk">
@@ -722,7 +813,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x0F-i3-QFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2228" y="295"/>
+            <point key="canvasLocation" x="3096" y="-1145"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="f8l-Q0-fv7">
@@ -736,17 +827,17 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cocoaheads" translatesAutoresizingMaskIntoConstraints="NO" id="ace-Ct-DJw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cocoaheads" translatesAutoresizingMaskIntoConstraints="NO" id="ace-Ct-DJw">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="385"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cocoa Heads" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5z7-tT-08d">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cocoa Heads" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5z7-tT-08d">
                                 <rect key="frame" x="16" y="332" width="210" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.0" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CHLogo" translatesAutoresizingMaskIntoConstraints="NO" id="daS-ha-1rK">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="CHLogo" translatesAutoresizingMaskIntoConstraints="NO" id="daS-ha-1rK">
                                 <rect key="frame" x="475" y="393" width="109" height="99"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -754,7 +845,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                                     <constraint firstAttribute="width" constant="109" id="sar-3A-pCK"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cE-qS-arO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cE-qS-arO">
                                 <rect key="frame" x="16" y="393" width="429" height="102"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="429" id="omN-DN-lpq"/>
@@ -762,7 +853,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                                 </constraints>
                                 <string key="text">Three years ago, me and my friends have started first Cocoa Heads meetups in Poland. Our iOS and OS X community meets every month to learn from each other how to design apps and write efficiently in Objective-C and Swift.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -803,10 +894,103 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="zx9-5s-62G">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="vPk-4i-Sfl"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sfN-7Y-WgQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="689" y="1178"/>
+            <point key="canvasLocation" x="2291" y="-190"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Jzd-ME-9kp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xh1-oC-ZhZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4PS-cY-gjt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jqW-ef-ZK8" kind="relationship" relationship="rootViewController" id="JGb-Gp-cmL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sk9-eE-oz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-311" y="459"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Cbh-rg-pdt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Grr-tO-GAG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8D9-NB-plM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Vbp-j1-EHV" kind="relationship" relationship="rootViewController" id="0wv-B6-y9t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lsb-ga-9c5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1379" y="937"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hQO-3r-Uvc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y9I-AT-ecJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r47-k5-Xd2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ejX-FZ-LxP" kind="relationship" relationship="rootViewController" id="zNm-5R-gVW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wUl-DP-Z4i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1479" y="-190"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3uO-Ib-N8d">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DLn-z3-oq6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i2R-5s-X3p">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zfh-oM-DAP" kind="relationship" relationship="rootViewController" id="cAK-k8-qAs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M2U-dy-AeA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1471" y="-1160"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cbc-HQ-Iob">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vrs-nH-9XS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yu0-AI-2W6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ax9-tW-cBO" kind="relationship" relationship="rootViewController" id="jJU-EX-CUc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nWB-Nw-oQb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1432" y="-1859"/>
         </scene>
     </scenes>
     <resources>
