@@ -38,19 +38,28 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p42-rk-3TL">
-                                        <rect key="frame" x="88" y="88" width="116" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <rect key="frame" x="108" y="68" width="111" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUA-Dn-WuQ">
-                                        <rect key="frame" x="88" y="151" width="350" height="122"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUA-Dn-WuQ">
+                                        <rect key="frame" x="108" y="141" width="350" height="183"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="350" id="Qhp-RH-Vm8"/>
                                         </constraints>
-                                        <string key="text">I found coffee to be cos tam.I found coffee to be cos tam.I found coffee to be cos tam.I found coffee to be cos tam.I found coffee to be cos tam.I found coffee to be cos tam.I found coffee to be cos tam.I found coffee to be cos tam.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">I found coffee to be an amazing drink. Choosing the best grains, balancing the level of grinding and finally, drawing with the milk, gives me lots of fun.
+
+This year, I got a barista certificate and learned basics of Latte Art. Buying profesional coffee machine is a next step!</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.1499999999999999"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lateart" translatesAutoresizingMaskIntoConstraints="NO" id="ge4-mJ-KXe">
@@ -66,12 +75,12 @@
                                     <constraint firstItem="oCI-zG-g6T" firstAttribute="trailing" secondItem="ge4-mJ-KXe" secondAttribute="trailing" id="FPH-IG-E5a"/>
                                     <constraint firstAttribute="bottom" secondItem="ge4-mJ-KXe" secondAttribute="bottom" id="N72-5Q-olI"/>
                                     <constraint firstItem="oCI-zG-g6T" firstAttribute="top" secondItem="f56-YM-Ym1" secondAttribute="bottom" id="cEg-mZ-DUM"/>
-                                    <constraint firstItem="KUA-Dn-WuQ" firstAttribute="top" secondItem="p42-rk-3TL" secondAttribute="bottom" constant="15" id="fZK-pd-AjP"/>
+                                    <constraint firstItem="KUA-Dn-WuQ" firstAttribute="top" secondItem="p42-rk-3TL" secondAttribute="bottom" constant="25" id="fZK-pd-AjP"/>
                                     <constraint firstItem="p42-rk-3TL" firstAttribute="leading" secondItem="KUA-Dn-WuQ" secondAttribute="leading" id="g31-l7-jIN"/>
-                                    <constraint firstItem="p42-rk-3TL" firstAttribute="leading" secondItem="NJz-JE-BFo" secondAttribute="leadingMargin" constant="80" id="hzT-tr-qLJ"/>
+                                    <constraint firstItem="p42-rk-3TL" firstAttribute="leading" secondItem="NJz-JE-BFo" secondAttribute="leadingMargin" constant="100" id="hzT-tr-qLJ"/>
                                     <constraint firstAttribute="trailing" secondItem="ge4-mJ-KXe" secondAttribute="trailing" id="jWL-vl-2tq"/>
                                     <constraint firstItem="oCI-zG-g6T" firstAttribute="trailing" secondItem="f56-YM-Ym1" secondAttribute="trailing" id="nw6-Oy-xhm"/>
-                                    <constraint firstItem="p42-rk-3TL" firstAttribute="top" secondItem="NJz-JE-BFo" secondAttribute="topMargin" constant="80" id="sDx-zQ-XzB"/>
+                                    <constraint firstItem="p42-rk-3TL" firstAttribute="top" secondItem="NJz-JE-BFo" secondAttribute="topMargin" constant="60" id="sDx-zQ-XzB"/>
                                     <constraint firstItem="ge4-mJ-KXe" firstAttribute="top" secondItem="oCI-zG-g6T" secondAttribute="bottom" id="vQP-BF-JnG"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -388,14 +397,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KRAKÓW" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAF-Qe-aGd">
-                                <rect key="frame" x="350" y="125" width="204" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="KRAKÓW" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAF-Qe-aGd">
+                                <rect key="frame" x="-484" y="125" width="204" height="60"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
                                 <color key="textColor" red="1" green="0.33333333333333331" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPC-L1-Bb7" customClass="PolandMapView" customModule="WWDC15" customModuleProvider="target">
-                                <rect key="frame" x="-150" y="125" width="450" height="450"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hPC-L1-Bb7" customClass="PolandMapView" customModule="WWDC15" customModuleProvider="target">
+                                <rect key="frame" x="-984" y="125" width="450" height="450"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="JME-8Z-Aix"/>
@@ -414,7 +423,7 @@
                                     <fragment>
                                         <string key="content">Kraków, "The city of Kings", laying at the foot of Polish mountains, is an astounding city with a long and great history.
 I am so lucky to live here.
-Nowadays, thanks to many of the best universities and a vibrant students community, it is recognized as a leading region in IT in the country.</string>
+Nowadays, thanks to many of the best universities and a vibrant students community, it is recognized as a leading IT region in the country.</string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
@@ -872,14 +881,14 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cE-qS-arO">
-                                <rect key="frame" x="50" y="448" width="429" height="102"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cE-qS-arO">
+                                <rect key="frame" x="50" y="447" width="440" height="103"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="429" id="Ekh-pl-06r"/>
+                                    <constraint firstAttribute="width" constant="440" id="Ekh-pl-06r"/>
                                     <constraint firstAttribute="width" constant="429" id="omN-DN-lpq"/>
                                     <constraint firstAttribute="width" constant="568" id="vaW-wC-tSx"/>
                                 </constraints>
-                                <string key="text">Three years ago, me and my friends have started first Cocoa Heads meetups in Poland. Our iOS and OS X community meets every month to learn from each other how to design apps and write efficiently in Objective-C and Swift.</string>
+                                <string key="text">Three years ago, me and my friends have started the first Cocoa Heads meetups in Poland. Our iOS and OS X community meets every month to learn from each other how to design apps and write efficiently in Objective-C and Swift.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
