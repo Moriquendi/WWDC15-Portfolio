@@ -18,8 +18,17 @@ UICollectionViewDelegate {
     // MARK: UIViewController
 
     override func viewDidLoad() {
+        self.navigationController?.navigationBar.translucent = false
+        self.navigationController?.navigationBar.opaque = true
         super.viewDidLoad()
+        
         self.loadPages()
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Close", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("dismiss"))
+    }
+    
+    func dismiss() {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func loadPages()

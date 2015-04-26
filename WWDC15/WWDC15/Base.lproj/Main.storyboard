@@ -287,7 +287,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Pax-UB-OOx" kind="show" id="Fay-Wv-ym0"/>
+                                    <segue destination="ZAZ-Ft-EBG" kind="show" id="Fay-Wv-ym0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcy-m5-63h">
@@ -714,13 +714,14 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="U5B-D7-YJt"/>
                     <connections>
                         <outlet property="collectionView" destination="p5m-tL-zZa" id="BDc-ow-34G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZQ7-R5-aFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1420" y="-2571"/>
+            <point key="canvasLocation" x="2232" y="-2571"/>
         </scene>
         <!--Project Details View Controller-->
         <scene sceneID="hRR-WU-nUk">
@@ -999,6 +1000,24 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWB-Nw-oQb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1432" y="-1859"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="G45-c2-jIu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZAZ-Ft-EBG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QB4-og-W0W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Pax-UB-OOx" kind="relationship" relationship="rootViewController" id="Lls-Co-qz8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pEF-lJ-Bg3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1420" y="-2571"/>
         </scene>
     </scenes>
     <resources>
