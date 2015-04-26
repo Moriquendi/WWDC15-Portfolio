@@ -269,10 +269,10 @@
             </objects>
             <point key="canvasLocation" x="-1491" y="1732"/>
         </scene>
-        <!--View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="U39-mv-WRK">
             <objects>
-                <viewController id="X2R-XJ-vUX" sceneMemberID="viewController">
+                <viewController id="X2R-XJ-vUX" customClass="MenuViewController" customModule="WWDC15" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CIg-rl-UjN"/>
                         <viewControllerLayoutGuide type="bottom" id="Zau-LU-7Mw"/>
@@ -281,8 +281,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3b-e8-baN">
-                                <rect key="frame" x="158" y="159" width="88" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3b-e8-baN">
+                                <rect key="frame" x="49" y="362" width="135" height="44"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                                 <state key="normal" title="Into The wild">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -290,17 +291,9 @@
                                     <segue destination="ZAZ-Ft-EBG" kind="show" id="Fay-Wv-ym0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcy-m5-63h">
-                                <rect key="frame" x="158" y="190" width="45" height="30"/>
-                                <state key="normal" title="Coffee">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Grr-tO-GAG" kind="show" id="NA4-Vp-GMe"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmt-SR-Sb8">
-                                <rect key="frame" x="158" y="239" width="65" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmt-SR-Sb8">
+                                <rect key="frame" x="49" y="258" width="103" height="44"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                                 <state key="normal" title="AGHacks">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -308,8 +301,9 @@
                                     <segue destination="xh1-oC-ZhZ" kind="show" id="jLu-Av-bCv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLV-v5-p2q">
-                                <rect key="frame" x="163" y="285" width="67" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLV-v5-p2q">
+                                <rect key="frame" x="49" y="154" width="106" height="44"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                                 <state key="normal" title="About me">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -317,8 +311,9 @@
                                     <segue destination="vrs-nH-9XS" kind="show" id="8ne-8F-ucs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rw-Z9-5cQ">
-                                <rect key="frame" x="160" y="332" width="61" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rw-Z9-5cQ">
+                                <rect key="frame" x="49" y="206" width="97" height="44"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                                 <state key="normal" title="My Apps">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -326,8 +321,9 @@
                                     <segue destination="DLn-z3-oq6" kind="show" id="Xbe-2M-AHe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJu-m3-s25">
-                                <rect key="frame" x="160" y="370" width="94" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJu-m3-s25">
+                                <rect key="frame" x="49" y="310" width="151" height="44"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
                                 <state key="normal" title="Cocoa Heads">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -335,9 +331,45 @@
                                     <segue destination="y9I-AT-ecJ" kind="show" id="YCZ-R3-7mq"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="ZU8-3L-6QC">
+                                <rect key="frame" x="400" y="175" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="5gV-bs-dnj"/>
+                                    <constraint firstAttribute="width" secondItem="ZU8-3L-6QC" secondAttribute="height" multiplier="1:1" id="q0v-R2-MpU"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcy-m5-63h">
+                                <rect key="frame" x="49" y="414" width="72" height="44"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="26"/>
+                                <state key="normal" title="Coffee">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Grr-tO-GAG" kind="show" id="NA4-Vp-GMe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BLV-v5-p2q" firstAttribute="leading" secondItem="3rw-Z9-5cQ" secondAttribute="leading" id="2Vb-WV-aQi"/>
+                            <constraint firstItem="V3b-e8-baN" firstAttribute="leading" secondItem="vcy-m5-63h" secondAttribute="leading" id="7nt-KI-IqT"/>
+                            <constraint firstItem="3rw-Z9-5cQ" firstAttribute="top" secondItem="BLV-v5-p2q" secondAttribute="bottom" constant="8" id="AH6-xh-xzV"/>
+                            <constraint firstItem="V3b-e8-baN" firstAttribute="top" secondItem="VJu-m3-s25" secondAttribute="bottom" constant="8" id="CvK-xA-QMt"/>
+                            <constraint firstItem="3rw-Z9-5cQ" firstAttribute="leading" secondItem="Dmt-SR-Sb8" secondAttribute="leading" id="LGr-Hf-qIM"/>
+                            <constraint firstAttribute="centerY" secondItem="ZU8-3L-6QC" secondAttribute="centerY" id="LsT-9u-url"/>
+                            <constraint firstItem="V3b-e8-baN" firstAttribute="leading" secondItem="VJu-m3-s25" secondAttribute="leading" id="MmC-TR-j9R"/>
+                            <constraint firstItem="vcy-m5-63h" firstAttribute="top" secondItem="V3b-e8-baN" secondAttribute="bottom" constant="8" id="NXp-9d-poO"/>
+                            <constraint firstItem="VJu-m3-s25" firstAttribute="top" secondItem="Dmt-SR-Sb8" secondAttribute="bottom" constant="8" id="RoT-ak-9Bb"/>
+                            <constraint firstAttribute="centerX" secondItem="ZU8-3L-6QC" secondAttribute="leading" constant="-100" id="c0R-Ce-23H"/>
+                            <constraint firstItem="Dmt-SR-Sb8" firstAttribute="top" secondItem="3rw-Z9-5cQ" secondAttribute="bottom" constant="8" id="cyp-ps-eNI"/>
+                            <constraint firstAttribute="centerY" secondItem="VJu-m3-s25" secondAttribute="top" constant="-10" id="nIz-Wx-Npo"/>
+                            <constraint firstAttribute="centerX" secondItem="VJu-m3-s25" secondAttribute="trailing" constant="100" id="wiL-o6-lxE"/>
+                            <constraint firstItem="VJu-m3-s25" firstAttribute="leading" secondItem="Dmt-SR-Sb8" secondAttribute="leading" id="zYh-CS-oAD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="profileImageView" destination="ZU8-3L-6QC" id="MLj-Z4-oRr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLk-gX-knU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1029,5 +1061,6 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
         <image name="lateart" width="576" height="576"/>
         <image name="lateart2" width="783" height="783"/>
         <image name="panda3" width="567" height="432"/>
+        <image name="profile" width="250" height="250"/>
     </resources>
 </document>

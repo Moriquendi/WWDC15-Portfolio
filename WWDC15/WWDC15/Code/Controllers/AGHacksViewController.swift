@@ -31,6 +31,11 @@ UICollectionViewDelegate {
         super.init(coder: aDecoder)
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.moviePlayer.pause()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.translucent = true

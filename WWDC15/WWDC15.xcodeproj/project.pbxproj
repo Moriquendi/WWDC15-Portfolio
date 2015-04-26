@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		901465A41AED986300E589FE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901465A31AED986300E589FE /* MenuViewController.swift */; };
 		903DA6521AE6D7B70010508D /* DSAnimatedAppleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903DA6511AE6D7B70010508D /* DSAnimatedAppleView.swift */; };
 		903F5C921AE04172008E1FAB /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903F5C911AE04172008E1FAB /* GradientView.swift */; };
 		903F5C961AE04ACA008E1FAB /* ProjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903F5C941AE04ACA008E1FAB /* ProjectDetailsViewController.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		901465A31AED986300E589FE /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = Code/Controllers/MenuViewController.swift; sourceTree = "<group>"; };
 		903DA6511AE6D7B70010508D /* DSAnimatedAppleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DSAnimatedAppleView.swift; path = Code/Views/DSAnimatedAppleView.swift; sourceTree = "<group>"; };
 		903F5C911AE04172008E1FAB /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = Code/Views/Shared/GradientView.swift; sourceTree = "<group>"; };
 		903F5C941AE04ACA008E1FAB /* ProjectDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectDetailsViewController.swift; path = Code/Controllers/ProjectDetailsViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				904F025B1AEBBC6D00530132 /* LogoTransitionViewController.swift */,
 				9060845E1AED01E700757C1F /* CoffeeViewController.swift */,
 				906084601AED058E00757C1F /* CocoaHeadsViewController.swift */,
+				901465A31AED986300E589FE /* MenuViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				907053441ADF023500DC8E27 /* PBDCarouselCollectionViewLayout.m in Sources */,
 				903DA6521AE6D7B70010508D /* DSAnimatedAppleView.swift in Sources */,
 				90476B651AE7AA61002CAF31 /* TunelCollectionViewLayout.m in Sources */,
+				901465A41AED986300E589FE /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
