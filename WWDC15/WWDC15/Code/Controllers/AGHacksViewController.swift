@@ -43,7 +43,8 @@ UICollectionViewDelegate {
         
         self.logoView.layer.cornerRadius = self.logoView.bounds.size.width/2
         
-        let imagesNames = ["aghacksteam", "aghacksteam", "aghacksteam", "aghacksteam"]
+        let imagesNames = ["aghacksteam", "aghacks1", "aghacks2", "aghacks3",
+        "aghacks4","aghacks5","aghacks6","aghacks7","aghacks8"]
         for name in imagesNames {
             self.images = self.images.arrayByAddingObject(UIImage(named: name)!)
         }
@@ -72,7 +73,7 @@ UICollectionViewDelegate {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(kImageCell, forIndexPath: indexPath) as! ImageCollectionViewCell
         
-        cell.imageView.image = self.images[indexPath.item] as! UIImage
+        cell.imageView.image = self.images[indexPath.item] as? UIImage
         
         return cell
     }
