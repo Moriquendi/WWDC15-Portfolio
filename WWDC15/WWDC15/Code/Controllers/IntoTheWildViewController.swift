@@ -44,13 +44,13 @@ UICollectionViewDelegate {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(kCellIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
         
-        cell.layer.shadowColor = UIColor.blackColor().CGColor
-        cell.layer.shadowOpacity = 0.5
-        cell.clipsToBounds = false
-        cell.layer.shadowRadius = 20
-
+        for view in cell.contentView.subviews {
+            view.removeFromSuperview()
+        }
+        
         let pageView = self.views[indexPath.item]
         cell.contentView.addSubview(pageView)
+        pageView.autoresizingMask = .FlexibleWidth | .FlexibleHeight
         pageView.frame = cell.contentView.bounds
         
         return cell
