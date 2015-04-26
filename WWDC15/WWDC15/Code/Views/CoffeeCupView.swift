@@ -48,6 +48,21 @@ class CoffeeCupView: UIView {
         drawAnimation.toValue = 1
         layer.strokeEnd = 1
         layer.addAnimation(drawAnimation, forKey: "strokeEnd")
+        
+        let clear = UIColor.clearColor()
+        let white = UIColor.whiteColor()
+        let black = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+        let yellow = UIColor(red: 1, green: 165/255, blue: 0, alpha: 1)
+        let red = UIColor(red: 1, green: 85/255, blue: 52/255, alpha: 1)
+        let pink = UIColor(red: 254/255, green: 74/255, blue: 101/255, alpha: 1)
+        let fillColors = [red, pink, yellow, yellow, black, yellow, clear, clear, clear]
+        
+        let fillAnimation = CABasicAnimation(keyPath: "fillColor")
+        fillAnimation.duration = 0.8
+        fillAnimation.fromValue = UIColor.clearColor().CGColor
+        fillAnimation.toValue = fillColors[index].CGColor
+        layer.fillColor = fillColors[index].CGColor
+        layer.addAnimation(fillAnimation, forKey: "fillColor")
     }
     
     
@@ -174,13 +189,7 @@ class CoffeeCupView: UIView {
 
         self.bezierPaths = [bezierPath, bezier2Path, bezier3Path, bezier4Path, bezier5Path, bezier6Path, bezier7Path, bezier8Path, bezier9Path]
         
-        let clear = UIColor.clearColor()
-        let white = UIColor.whiteColor()
-        let black = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
-        let yellow = UIColor(red: 1, green: 165/255, blue: 0, alpha: 1)
-        let red = UIColor(red: 1, green: 85/255, blue: 52/255, alpha: 1)
-        let pink = UIColor(red: 254/255, green: 74/255, blue: 101/255, alpha: 1)
-        let fillColors = [red, pink, yellow, yellow, black, yellow, clear, clear, clear]
+
         
         var i = 0
         let xScale = self.bounds.size.width / 100.0;
@@ -195,7 +204,7 @@ class CoffeeCupView: UIView {
             
             let layer = CAShapeLayer()
             layer.path = path.CGPath
-            layer.fillColor = fillColors[i].CGColor
+            layer.fillColor = UIColor.clearColor().CGColor
             layer.strokeColor = UIColor.blackColor().CGColor
             layer.lineWidth = 2
             self.layer.addSublayer(layer)
