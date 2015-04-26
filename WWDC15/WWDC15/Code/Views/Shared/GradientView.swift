@@ -8,7 +8,6 @@
 
 import UIKit
 
-@IBDesignable
 class GradientView: UIView {
     
     let kLinearGradientType = "kLinearGradientType"

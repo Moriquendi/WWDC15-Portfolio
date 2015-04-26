@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X2R-XJ-vUX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -20,17 +20,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="800" height="700"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJz-JE-BFo" customClass="GradientView" customModule="WWDC15" customModuleProvider="target">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NJz-JE-BFo" customClass="GradientView" customModule="WWDC15" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="800" height="700"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lateart2" translatesAutoresizingMaskIntoConstraints="NO" id="f56-YM-Ym1">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lateart2" translatesAutoresizingMaskIntoConstraints="NO" id="f56-YM-Ym1">
                                         <rect key="frame" x="550" y="-50" width="250" height="250"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="f56-YM-Ym1" secondAttribute="height" multiplier="1:1" id="5RO-if-dLd"/>
                                             <constraint firstAttribute="width" constant="250" id="u6c-Qk-VNW"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffees" translatesAutoresizingMaskIntoConstraints="NO" id="oCI-zG-g6T">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="coffees" translatesAutoresizingMaskIntoConstraints="NO" id="oCI-zG-g6T">
                                         <rect key="frame" x="550" y="200" width="250" height="250"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="oCI-zG-g6T" secondAttribute="height" multiplier="1:1" id="0Gs-NT-Nz9"/>
@@ -53,7 +53,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lateart" translatesAutoresizingMaskIntoConstraints="NO" id="ge4-mJ-KXe">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lateart" translatesAutoresizingMaskIntoConstraints="NO" id="ge4-mJ-KXe">
                                         <rect key="frame" x="550" y="450" width="250" height="250"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="3ex-zg-WKv"/>
@@ -144,8 +144,9 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLz-Qe-ED8">
-                                <rect key="frame" x="280" y="562" width="30" height="30"/>
-                                <state key="normal" title="\/">
+                                <rect key="frame" x="260" y="541" width="70" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Let's go!">
                                     <color key="titleColor" red="0.73461019989999998" green="0.19068783519999999" blue="0.1534747779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -158,7 +159,7 @@
                         <constraints>
                             <constraint firstItem="RQ7-Xc-78Y" firstAttribute="top" secondItem="bhm-So-EtG" secondAttribute="bottom" id="9Ng-qC-F5E"/>
                             <constraint firstAttribute="centerX" secondItem="mLz-Qe-ED8" secondAttribute="centerX" constant="5" id="Qew-jt-Wi6"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mLz-Qe-ED8" secondAttribute="bottom" constant="8" id="WG0-xM-DAx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mLz-Qe-ED8" secondAttribute="bottom" constant="25" id="WG0-xM-DAx"/>
                             <constraint firstAttribute="centerX" secondItem="bhm-So-EtG" secondAttribute="centerX" id="YOe-Wl-hY7"/>
                             <constraint firstItem="RQ7-Xc-78Y" firstAttribute="leading" secondItem="bhm-So-EtG" secondAttribute="leading" id="aMa-zU-AeL"/>
                             <constraint firstAttribute="centerY" secondItem="bhm-So-EtG" secondAttribute="bottom" id="aNU-lP-eCo"/>
@@ -181,7 +182,7 @@
         <!--Circles Editor View Controller-->
         <scene sceneID="C3F-KI-LVM">
             <objects>
-                <viewController id="R6d-S7-gbd" customClass="CirclesEditorViewController" customModule="WWDC15" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="kBuilderId" id="R6d-S7-gbd" customClass="CirclesEditorViewController" customModule="WWDC15" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VAb-eJ-0o6"/>
                         <viewControllerLayoutGuide type="bottom" id="ehm-HM-W2F"/>
@@ -797,7 +798,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oL2-wu-sp9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oL2-wu-sp9">
                                 <rect key="frame" x="30" y="360" width="554" height="163"/>
                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -871,7 +872,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cE-qS-arO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cE-qS-arO">
                                 <rect key="frame" x="50" y="448" width="429" height="102"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="429" id="Ekh-pl-06r"/>
@@ -890,7 +891,7 @@ Nowadays, thanks to many of the best universities and a vibrant students communi
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cocoa Heads" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5z7-tT-08d">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cocoa Heads" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5z7-tT-08d">
                                 <rect key="frame" x="50" y="385" width="210" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

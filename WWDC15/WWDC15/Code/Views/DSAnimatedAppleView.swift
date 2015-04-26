@@ -32,6 +32,10 @@ class DSAnimatedAppleView: UIView {
     var completionBlock: (() -> Void)?
     func animate(completion: ((Void) -> Void)?)
     {
+        if (self.circles.count == 0) {
+            completion!()
+            return
+        }
         self.completionBlock = completion
         
         for circleView in self.circles {
@@ -86,10 +90,11 @@ class DSAnimatedAppleView: UIView {
     }
     
     func loadCircles() {
-        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true);
-        let documentsDirectory: NSString = paths[0] as! NSString
-        let plistPath = documentsDirectory.stringByAppendingPathComponent("points.plist")
-        let data = NSArray(contentsOfFile: plistPath)
+        let plistPath = NSBundle.mainBundle().pathForResource("points", ofType: "plist")
+        if (plistPath == nil) {
+            return
+        }
+        let data = NSArray(contentsOfFile: plistPath!)
         
         data?.enumerateObjectsUsingBlock({ (object: AnyObject!, index: Int, stop: UnsafeMutablePointer<ObjCBool>) -> Void in
             let dict = object as! Dictionary<String, CGFloat>
