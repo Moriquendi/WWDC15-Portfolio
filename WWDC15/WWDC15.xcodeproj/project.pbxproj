@@ -282,9 +282,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		909AD2DD1ADD7FA2003344F7 /* WWDC15 */ = {
+		909AD2DD1ADD7FA2003344F7 /* Michal Smialko */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 909AD2FD1ADD7FA2003344F7 /* Build configuration list for PBXNativeTarget "WWDC15" */;
+			buildConfigurationList = 909AD2FD1ADD7FA2003344F7 /* Build configuration list for PBXNativeTarget "Michal Smialko" */;
 			buildPhases = (
 				909AD2DA1ADD7FA2003344F7 /* Sources */,
 				909AD2DB1ADD7FA2003344F7 /* Frameworks */,
@@ -294,7 +294,7 @@
 			);
 			dependencies = (
 			);
-			name = WWDC15;
+			name = "Michal Smialko";
 			productName = WWDC15;
 			productReference = 909AD2DE1ADD7FA2003344F7 /* WWDC15.app */;
 			productType = "com.apple.product-type.application";
@@ -349,7 +349,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				909AD2DD1ADD7FA2003344F7 /* WWDC15 */,
+				909AD2DD1ADD7FA2003344F7 /* Michal Smialko */,
 				909AD2F21ADD7FA2003344F7 /* WWDC15Tests */,
 			);
 		};
@@ -423,7 +423,7 @@
 /* Begin PBXTargetDependency section */
 		909AD2F51ADD7FA2003344F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 909AD2DD1ADD7FA2003344F7 /* WWDC15 */;
+			target = 909AD2DD1ADD7FA2003344F7 /* Michal Smialko */;
 			targetProxy = 909AD2F41ADD7FA2003344F7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -604,7 +604,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		909AD2FD1ADD7FA2003344F7 /* Build configuration list for PBXNativeTarget "WWDC15" */ = {
+		909AD2FD1ADD7FA2003344F7 /* Build configuration list for PBXNativeTarget "Michal Smialko" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				909AD2FE1ADD7FA2003344F7 /* Debug */,
